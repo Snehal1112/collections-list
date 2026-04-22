@@ -1,0 +1,8 @@
+uid: d2a943e7-004c-4e39-a001-28a00200ab30
+info:
+  name: Query Sync Task List
+  type: http
+  seq: 10
+http:
+  method: GET
+  url: '{{sageNetworkBaseUrl}}/connectors/erp/datasets/{{networkProductInstancesTenantIdBuyer}}/sync-tasks?take=20&skip=0'

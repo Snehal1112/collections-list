@@ -1,0 +1,11 @@
+uid: d46f699f-23c1-49b2-a967-16f2717164d4
+info:
+  name: WorkflowStatus
+  type: http
+  seq: 8
+http:
+  method: GET
+  url: '{{ADSapi}}/workflow-statuses/query'
+  headers:
+  - name: X-Group-Key
+    value: '{{networkProductInstancesTenantIdBuyer}}'

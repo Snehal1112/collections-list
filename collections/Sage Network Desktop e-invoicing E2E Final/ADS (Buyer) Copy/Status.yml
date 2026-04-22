@@ -1,0 +1,11 @@
+uid: 71c791ac-5991-4993-8a41-155573776d98
+info:
+  name: Status
+  type: http
+  seq: 7
+http:
+  method: GET
+  url: '{{ADSapi}}/status'
+  headers:
+  - name: X-Group-Key
+    value: '{{networkProductInstancesTenantIdBuyer}}'

@@ -1,0 +1,11 @@
+uid: 48c3101f-416f-4540-8634-13382c0d96d5
+info:
+  name: 4 Query sync task
+  type: http
+  seq: 5
+http:
+  method: GET
+  url: '{{sageNetworkBaseUrl}}/connectors/erp/datasets/{{networkProductInstancesTenantId}}/sync-tasks?take=20&skip=0'
+  headers:
+  - name: accept
+    value: application/vnd.api+json

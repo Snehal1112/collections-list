@@ -1,0 +1,17 @@
+uid: 9474a988-099c-4cc3-90b1-cc95a0a92514
+info:
+  name: 2. User information
+  type: http
+  seq: 1
+http:
+  method: GET
+  url: '{{sageIdURL}}/userinfo'
+runtime:
+  scripts:
+  - type: after-response
+    code: |-
+      var jsonData = res.getBody();
+      bru.setEnvVar("provisionAccountEmail", jsonData.email);
+      bru.setVar("provisionAccountEmail", jsonData.email);
+      bru.setEnvVar("LoggedInUserAuth0PrincipalId", jsonData.sub)
+      bru.setVar("LoggedInUserAuth0PrincipalId", jsonData.sub);

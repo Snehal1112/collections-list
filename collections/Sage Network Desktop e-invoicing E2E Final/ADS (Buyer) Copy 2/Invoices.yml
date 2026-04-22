@@ -1,0 +1,11 @@
+uid: 6c067460-5932-400f-8fc1-2f6e2d1cdb85
+info:
+  name: Invoices
+  type: http
+  seq: 2
+http:
+  method: GET
+  url: '{{ADSapi}}/Invoices/query'
+  headers:
+  - name: X-Group-Key
+    value: '{{networkProductInstancesTenantIdBuyer}}'
