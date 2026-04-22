@@ -7,7 +7,7 @@ request:
     type: oauth2
     flow: authorization_code
     accessTokenUrl: https://id-shadow.sage.com/oauth/token
-    authorizationUrl: https://id-shadow.sage.com/authorize?audience=SBCDS/global&nonce=iamarandomnonce
+    authorizationUrl: https://id-shadow.sage.com/authorize
     callbackUrl: https://jwt.io/
     credentials:
       clientId: 2VTkNzE3St3yShVbZ2cnlkhQVBUHxves
@@ -24,6 +24,13 @@ request:
         placement: query
       - name: audience
         value: snet-dev/network/api
+        placement: query
+      accessTokenRequest:
+      - name: audience
+        value: SBCDS/global
+        placement: query
+      - name: nonce
+        value: iamarandomnonce
         placement: query
     settings:
       autoFetchToken: true
