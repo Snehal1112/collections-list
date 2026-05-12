@@ -1,13 +1,26 @@
 id: 01KPTBQD71C7BPS9CNGFYDRH41
 title: SXP-usermanager
-provider: SXP team
-consumer: Connect
+provider:
+  id: sxp-team
+  name: SXP team
+  kind: team
+consumers:
+- id: connect
+  name: Connect
+  kind: team
 project: Connect
 version: V0.11.1
+status: breach
 effectiveDate: 2026-04-22
-expiryDate: null
 documentPaths:
 - .rocket/contracts/attachments/01KPTBQD71C7BPS9CNGFYDRH41/CRN10469524527.pdf
 enforcementMode: informational
 scope:
   type: collection
+policy:
+  breakingChangePolicy: lenient
+  noticeDays: 30
+driftCount: 19
+breachCount: 10
+endpointCount: 0
+updatedAt: 2026-05-12T06:57:15.931468Z
