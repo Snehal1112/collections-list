@@ -15,8 +15,7 @@ request:
       placement: basic_auth_header
     scope: openid email profile offline_access user:full
     pkce:
-      enabled: true
-      method: S256
+      enabled: false
     additionalParameters:
       authorizationRequest:
       - name: nonce
@@ -37,7 +36,7 @@ request:
         placement: query
         enabled: true
     settings:
-      autoFetchToken: true
+      autoFetchToken: false
       autoRefreshToken: false
       verifySsl: false
       useSystemBrowser: false

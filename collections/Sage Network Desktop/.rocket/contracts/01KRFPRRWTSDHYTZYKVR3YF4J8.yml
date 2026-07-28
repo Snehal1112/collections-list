@@ -1,0 +1,27 @@
+id: 01KRFPRRWTSDHYTZYKVR3YF4J8
+title: Packages
+provider:
+  id: sxp
+  name: SXP
+  kind: team
+consumers:
+- id: connect
+  name: Connect
+  kind: team
+project: ''
+version: 0.1.2
+status: active
+effectiveDate: 2026-05-13
+enforcementMode: informational
+scope:
+  type: request
+  rel_path: Sync using ZIP file/Get Datasets.yml
+policy:
+  breakingChangePolicy: strict
+  noticeDays: 30
+  uptimeSla: 99.9
+driftCount: 0
+breachCount: 0
+endpointCount: 1
+createdAt: 2026-05-13T03:40:57.626102Z
+updatedAt: 2026-07-28T12:20:05.907083Z

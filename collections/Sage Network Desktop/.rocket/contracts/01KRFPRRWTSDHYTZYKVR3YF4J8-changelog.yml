@@ -1,0 +1,49 @@
+contractId: 01KRFPRRWTSDHYTZYKVR3YF4J8
+entries:
+- timestamp: 2026-05-13T07:23:39.657176Z
+  requestPath: Sync using ZIP file/Get Datasets.yml
+  field: header.Sdd
+  changeType: added
+  newValue: ddddddd
+  isBreaking: true
+  requestMethod: GET
+  httpPath: https://api-qa.network-eng.sage.com/datasets
+  author: snehaldangroshiya
+- timestamp: 2026-05-15T02:40:06.596380Z
+  requestPath: Sync using ZIP file/Get Datasets.yml
+  field: header.Sdd
+  changeType: removed
+  oldValue: ddddddd
+  isBreaking: true
+  requestMethod: GET
+  httpPath: https://api-qa.network-eng.sage.com/datasets
+  author: snehaldangroshiya
+- timestamp: 2026-05-15T02:40:12.338334Z
+  requestPath: Sync using ZIP file/Get Datasets.yml
+  field: header.Sdd
+  changeType: added
+  newValue: ddddddd
+  isBreaking: true
+  requestMethod: GET
+  httpPath: https://api-qa.network-eng.sage.com/datasets
+  author: snehaldangroshiya
+- timestamp: 2026-07-28T12:19:44.267772Z
+  requestPath: Sync using ZIP file/Get Datasets.yml
+  field: url_pattern
+  changeType: changed
+  oldValue: https://api-qa.network-eng.sage.com/datasets
+  newValue: https://api-qa.network-eng.sage.com/datasets/lk
+  isBreaking: true
+  requestMethod: GET
+  httpPath: https://api-qa.network-eng.sage.com/datasets/lk
+  author: snehaldangroshiya
+- timestamp: 2026-07-28T12:20:02.441065Z
+  requestPath: Sync using ZIP file/Get Datasets.yml
+  field: url_pattern
+  changeType: changed
+  oldValue: https://api-qa.network-eng.sage.com/datasets/lk
+  newValue: https://api-qa.network-eng.sage.com/datasets
+  isBreaking: true
+  requestMethod: GET
+  httpPath: https://api-qa.network-eng.sage.com/datasets
+  author: snehaldangroshiya

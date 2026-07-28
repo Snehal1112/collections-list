@@ -1,0 +1,22 @@
+contractId: 01KY44EV8VSG4C435XSMN7DRWG
+entries:
+- timestamp: 2026-07-28T12:19:44.304496Z
+  requestPath: Sync using ZIP file/Get Datasets.yml
+  field: url_pattern
+  changeType: changed
+  oldValue: https://api-qa.network-eng.sage.com/datasets
+  newValue: https://api-qa.network-eng.sage.com/datasets/lk
+  isBreaking: true
+  requestMethod: GET
+  httpPath: https://api-qa.network-eng.sage.com/datasets/lk
+  author: snehaldangroshiya
+- timestamp: 2026-07-28T12:20:02.494534Z
+  requestPath: Sync using ZIP file/Get Datasets.yml
+  field: url_pattern
+  changeType: changed
+  oldValue: https://api-qa.network-eng.sage.com/datasets/lk
+  newValue: https://api-qa.network-eng.sage.com/datasets
+  isBreaking: true
+  requestMethod: GET
+  httpPath: https://api-qa.network-eng.sage.com/datasets
+  author: snehaldangroshiya

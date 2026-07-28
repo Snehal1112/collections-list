@@ -8,19 +8,21 @@ consumers:
 - id: connect
   name: Connect
   kind: team
+- id: webapp
+  name: WebApp
+  kind: team
 project: Connect
-version: V0.11.1
-status: breach
+version: 0.11.5
+status: active
 effectiveDate: 2026-04-22
-documentPaths:
-- .rocket/contracts/attachments/01KPTBQD71C7BPS9CNGFYDRH41/CRN10469524527.pdf
 enforcementMode: informational
 scope:
   type: collection
 policy:
   breakingChangePolicy: lenient
   noticeDays: 30
-driftCount: 19
-breachCount: 10
-endpointCount: 0
-updatedAt: 2026-05-12T06:57:15.931468Z
+  uptimeSla: 99.9
+driftCount: 0
+breachCount: 0
+endpointCount: 45
+updatedAt: 2026-07-28T12:20:05.897048Z

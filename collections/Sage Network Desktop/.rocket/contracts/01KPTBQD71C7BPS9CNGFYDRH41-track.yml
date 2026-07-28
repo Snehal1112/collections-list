@@ -1218,7 +1218,7 @@ entries:
   formFields: []
   authType: none
   authDetail: ''
-  capturedAt: 2026-05-26T08:29:27.369774Z
+  capturedAt: 2026-07-28T12:20:02.373713Z
 - requestPath: Test-ts.yml
   method: GET
   urlPattern: '{{T1}}/api/v1//user/:name'

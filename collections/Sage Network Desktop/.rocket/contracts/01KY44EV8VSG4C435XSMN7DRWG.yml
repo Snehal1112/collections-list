@@ -1,0 +1,24 @@
+id: 01KY44EV8VSG4C435XSMN7DRWG
+title: Payments
+provider:
+  id: payment-provider-team
+  name: Payment provider team
+  kind: team
+consumers:
+- id: connect-team
+  name: Connect team
+  kind: team
+project: 'Go card provider '
+version: V1.0.0
+status: active
+effectiveDate: 2026-07-21
+enforcementMode: informational
+scope:
+  type: collection
+policy:
+  breakingChangePolicy: lenient
+  noticeDays: 30
+driftCount: 0
+breachCount: 0
+endpointCount: 0
+updatedAt: 2026-07-28T12:20:05.916820Z

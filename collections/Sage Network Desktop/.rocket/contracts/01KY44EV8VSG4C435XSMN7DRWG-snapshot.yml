@@ -1,4 +1,4 @@
-contractId: 01KPTBQD71C7BPS9CNGFYDRH41
+contractId: 01KY44EV8VSG4C435XSMN7DRWG
 entries:
 - requestPath: Ads Status Call.yml
   method: GET
@@ -8,7 +8,7 @@ entries:
   formFields: []
   authType: none
   authDetail: ''
-  capturedAt: 2026-05-26T08:29:27.369700Z
+  capturedAt: 2026-07-22T05:23:30.501030Z
 - requestPath: Get Status Self Service.yml
   method: GET
   urlPattern: https://int.network-eng.sage.com/portal/api/api/v3/status?user_type=customer&dataset_id=25a77b24-0092-6be0-92e6-34d0aae4e471&clear_cache=false
@@ -65,7 +65,7 @@ entries:
   formFields: []
   authType: none
   authDetail: ''
-  capturedAt: 2026-05-26T08:29:27.369708Z
+  capturedAt: 2026-07-22T05:23:30.501044Z
 - requestPath: Onboarding/2. User information.yml
   method: GET
   urlPattern: '{{sageIdURL}}/userinfo/sddd'
@@ -76,7 +76,7 @@ entries:
   formFields: []
   authType: none
   authDetail: ''
-  capturedAt: 2026-05-26T08:29:27.369710Z
+  capturedAt: 2026-07-22T05:23:30.501047Z
 - requestPath: Onboarding/3. ProvisionAccount returns 202.yml
   method: POST
   urlPattern: '{{connectedBridgeURL}}/provision/account'
@@ -146,7 +146,7 @@ entries:
   formFields: []
   authType: none
   authDetail: ''
-  capturedAt: 2026-05-26T08:29:27.369712Z
+  capturedAt: 2026-07-22T05:23:30.501385Z
 - requestPath: Onboarding/4. Poll Provision Account.yml
   method: POST
   urlPattern: '{{connectedBridgeURL}}/provision/account'
@@ -216,7 +216,7 @@ entries:
   formFields: []
   authType: none
   authDetail: ''
-  capturedAt: 2026-05-26T08:29:27.369717Z
+  capturedAt: 2026-07-22T05:23:30.501388Z
 - requestPath: Onboarding/5. Sage Network authorisation.yml
   method: GET
   urlPattern: http://
@@ -231,7 +231,7 @@ entries:
   formFields: []
   authType: none
   authDetail: ''
-  capturedAt: 2026-05-26T08:29:27.369719Z
+  capturedAt: 2026-07-22T05:23:30.501392Z
 - requestPath: Onboarding (Network as Default)/2. User information.yml
   method: GET
   urlPattern: '{{sageIdURL}}/userinfo'
@@ -240,7 +240,7 @@ entries:
   formFields: []
   authType: none
   authDetail: ''
-  capturedAt: 2026-05-26T08:29:27.369721Z
+  capturedAt: 2026-07-22T05:23:30.501394Z
 - requestPath: Onboarding (Network as Default)/3. ProvisionAccount returns 202.yml
   method: POST
   urlPattern: '{{connectedBridgeURL}}/provision/account'
@@ -304,7 +304,7 @@ entries:
   formFields: []
   authType: none
   authDetail: ''
-  capturedAt: 2026-05-26T08:29:27.369723Z
+  capturedAt: 2026-07-22T05:23:30.501397Z
 - requestPath: Onboarding (Network as Default)/4. Poll Provision Account.yml
   method: POST
   urlPattern: '{{connectedBridgeURL}}/provision/account'
@@ -368,7 +368,7 @@ entries:
   formFields: []
   authType: none
   authDetail: ''
-  capturedAt: 2026-05-26T08:29:27.369725Z
+  capturedAt: 2026-07-22T05:23:30.501400Z
 - requestPath: Onboarding (Network as Default)/5. Sage Network authorisation.yml
   method: GET
   urlPattern: http://
@@ -383,7 +383,7 @@ entries:
   formFields: []
   authType: none
   authDetail: ''
-  capturedAt: 2026-05-26T08:29:27.369728Z
+  capturedAt: 2026-07-22T05:23:30.501404Z
 - requestPath: Portal User Datasets.yml
   method: GET
   urlPattern: https://int.network-eng.sage.com/portal/api/api/v3/user_datasets
@@ -440,7 +440,7 @@ entries:
   formFields: []
   authType: none
   authDetail: ''
-  capturedAt: 2026-05-26T08:29:27.369733Z
+  capturedAt: 2026-07-22T05:23:30.501413Z
 - requestPath: Sage Connect/Status.yml
   method: GET
   urlPattern: https://dev.network-eng.sage.com/portal/api/api/v3/status?user_type=customer&clear_cache=true
@@ -493,7 +493,7 @@ entries:
   formFields: []
   authType: bearer
   authDetail: eyJhbGci…
-  capturedAt: 2026-05-26T08:29:27.369740Z
+  capturedAt: 2026-07-22T05:23:30.501423Z
 - requestPath: Sync using JSON/1. Create sync task.yml
   method: POST
   urlPattern: '{{connectorBaseUrl}}/connectors/erp/datasets/{{networkProductInstancesTenantId}}}/sync-tasks'
@@ -1024,7 +1024,7 @@ entries:
   formFields: []
   authType: none
   authDetail: ''
-  capturedAt: 2026-05-26T08:29:27.369743Z
+  capturedAt: 2026-07-22T05:23:30.501468Z
 - requestPath: Sync using JSON/2. Query sync task.yml
   method: GET
   urlPattern: '{{connectorBaseUrl}}/connectors/erp/datasets/{{networkProductInstancesTenantId}}/sync-tasks?filter=type eq ''toNetwork''&take=3&skip=0'
@@ -1037,7 +1037,7 @@ entries:
   formFields: []
   authType: none
   authDetail: ''
-  capturedAt: 2026-05-26T08:29:27.369745Z
+  capturedAt: 2026-07-22T05:23:30.501472Z
 - requestPath: Sync using JSON/3. Query sync task with ID.yml
   method: GET
   urlPattern: '{{connectorBaseUrl}}/connectors/erp/datasets/{{networkProductInstancesTenantId}}/sync-tasks/{{connectorSyncTaskId}}?include=Details'
@@ -1050,7 +1050,7 @@ entries:
   formFields: []
   authType: none
   authDetail: ''
-  capturedAt: 2026-05-26T08:29:27.369748Z
+  capturedAt: 2026-07-22T05:23:30.501475Z
 - requestPath: Sync using ZIP file/1. Create sync task.yml
   method: POST
   urlPattern: '{{connectorBaseUrl}}/connectors/erp/datasets/{{networkProductInstancesTenantId}}/sync-tasks'
@@ -1074,7 +1074,7 @@ entries:
   formFields: []
   authType: none
   authDetail: ''
-  capturedAt: 2026-05-26T08:29:27.369751Z
+  capturedAt: 2026-07-22T05:23:30.501478Z
 - requestPath: Sync using ZIP file/2. Upload zip file.yml
   method: PUT
   urlPattern: '{{connectorBlobUploadUrl}}'
@@ -1087,7 +1087,7 @@ entries:
   formFields: []
   authType: none
   authDetail: ''
-  capturedAt: 2026-05-26T08:29:27.369754Z
+  capturedAt: 2026-07-22T05:23:30.501482Z
 - requestPath: Sync using ZIP file/3. Update sync task.yml
   method: PATCH
   urlPattern: '{{connectorBaseUrl}}/connectors/erp/datasets/{{networkProductInstancesTenantId}}/sync-tasks'
@@ -1128,7 +1128,7 @@ entries:
   formFields: []
   authType: none
   authDetail: ''
-  capturedAt: 2026-05-26T08:29:27.369758Z
+  capturedAt: 2026-07-22T05:23:30.501489Z
 - requestPath: Sync using ZIP file/4. Query sync task.yml
   method: GET
   urlPattern: '{{connectorBaseUrl}}/connectors/erp/datasets/{{networkProductInstancesTenantId}}/sync-tasks/{{connectorSyncTaskId}}?include=Details'
@@ -1139,7 +1139,7 @@ entries:
   formFields: []
   authType: none
   authDetail: ''
-  capturedAt: 2026-05-26T08:29:27.369761Z
+  capturedAt: 2026-07-22T05:23:30.501492Z
 - requestPath: Sync using ZIP file/Abc.yml
   method: GET
   urlPattern: https://qa.network-eng.sage.com/inbox/api/v3/network_users?page=1&page_items=25&direct_users_only=false
@@ -1198,7 +1198,7 @@ entries:
   formFields: []
   authType: none
   authDetail: ''
-  capturedAt: 2026-05-26T08:29:27.369767Z
+  capturedAt: 2026-07-22T05:23:30.501501Z
 - requestPath: Sync using ZIP file/Get Dataset by Id.yml
   method: GET
   urlPattern: https://api-int.network-eng.sage.com/datasets/:datasetId
@@ -1207,7 +1207,7 @@ entries:
   formFields: []
   authType: none
   authDetail: ''
-  capturedAt: 2026-05-26T08:29:27.369770Z
+  capturedAt: 2026-07-22T05:23:30.501504Z
 - requestPath: Sync using ZIP file/Get Datasets.yml
   method: GET
   urlPattern: https://api-qa.network-eng.sage.com/datasets
@@ -1218,7 +1218,7 @@ entries:
   formFields: []
   authType: none
   authDetail: ''
-  capturedAt: 2026-05-26T08:29:27.369774Z
+  capturedAt: 2026-07-22T05:23:30.501507Z
 - requestPath: Test-ts.yml
   method: GET
   urlPattern: '{{T1}}/api/v1//user/:name'
@@ -1232,7 +1232,7 @@ entries:
   formFields: []
   authType: none
   authDetail: ''
-  capturedAt: 2026-05-26T08:29:27.369777Z
+  capturedAt: 2026-07-22T05:23:30.501510Z
 - requestPath: Testing/Credit allocations/credit-allocations--id.yml
   method: GET
   urlPattern: '{{NetworkUrl}}/datasets/{{networkProductInstancesTenantId}}/credit-allocations/:id'
@@ -1241,7 +1241,7 @@ entries:
   formFields: []
   authType: none
   authDetail: ''
-  capturedAt: 2026-05-26T08:29:27.369780Z
+  capturedAt: 2026-07-22T05:23:30.501514Z
 - requestPath: Testing/Credit allocations/credit-allocations.yml
   method: GET
   urlPattern: '{{NetworkUrl}}/datasets/{{networkProductInstancesTenantId}}/credit-allocations'
@@ -1250,7 +1250,7 @@ entries:
   formFields: []
   authType: none
   authDetail: ''
-  capturedAt: 2026-05-26T08:29:27.369784Z
+  capturedAt: 2026-07-22T05:23:30.501517Z
 - requestPath: Testing/Credits/credits--id.yml
   method: GET
   urlPattern: '{{NetworkUrl}}/datasets/{{networkProductInstancesTenantId}}/credits/:id'
@@ -1259,7 +1259,7 @@ entries:
   formFields: []
   authType: none
   authDetail: ''
-  capturedAt: 2026-05-26T08:29:27.369787Z
+  capturedAt: 2026-07-22T05:23:30.501521Z
 - requestPath: Testing/Credits/credits.yml
   method: GET
   urlPattern: '{{NetworkUrl}}/datasets/{{networkProductInstancesTenantId}}/credits'
@@ -1268,7 +1268,7 @@ entries:
   formFields: []
   authType: none
   authDetail: ''
-  capturedAt: 2026-05-26T08:29:27.369791Z
+  capturedAt: 2026-07-22T05:23:30.501524Z
 - requestPath: Testing/Invoice lines/invoices--id-lines--lineId.yml
   method: GET
   urlPattern: '{{NetworkUrl}}/datasets/{{networkProductInstancesTenantId}}/invoices/:id/lines/:lineId'
@@ -1277,7 +1277,7 @@ entries:
   formFields: []
   authType: none
   authDetail: ''
-  capturedAt: 2026-05-26T08:29:27.369795Z
+  capturedAt: 2026-07-22T05:23:30.501528Z
 - requestPath: Testing/Invoice lines/invoices--id-lines.yml
   method: GET
   urlPattern: '{{NetworkUrl}}/datasets/{{networkProductInstancesTenantId}}/invoices/:id/lines'
@@ -1286,7 +1286,7 @@ entries:
   formFields: []
   authType: none
   authDetail: ''
-  capturedAt: 2026-05-26T08:29:27.369799Z
+  capturedAt: 2026-07-22T05:23:30.501532Z
 - requestPath: Testing/Invoices/invoices--id.yml
   method: GET
   urlPattern: '{{NetworkUrl}}/datasets/{{networkProductInstancesTenantId}}/invoices/:id'
@@ -1295,7 +1295,7 @@ entries:
   formFields: []
   authType: none
   authDetail: ''
-  capturedAt: 2026-05-26T08:29:27.369803Z
+  capturedAt: 2026-07-22T05:23:30.501536Z
 - requestPath: Testing/Invoices/invoices.yml
   method: GET
   urlPattern: '{{NetworkUrl}}/datasets/{{networkProductInstancesTenantId}}/invoices'
@@ -1304,7 +1304,7 @@ entries:
   formFields: []
   authType: none
   authDetail: ''
-  capturedAt: 2026-05-26T08:29:27.369807Z
+  capturedAt: 2026-07-22T05:23:30.501539Z
 - requestPath: Testing/Payment allocations/payment-allocations--id.yml
   method: GET
   urlPattern: '{{NetworkUrl}}/datasets/{{networkProductInstancesTenantId}}/payment-allocations'
@@ -1313,7 +1313,7 @@ entries:
   formFields: []
   authType: none
   authDetail: ''
-  capturedAt: 2026-05-26T08:29:27.369812Z
+  capturedAt: 2026-07-22T05:23:30.501543Z
 - requestPath: Testing/Payment allocations/payment-allocations.yml
   method: GET
   urlPattern: '{{NetworkUrl}}/datasets/{{networkProductInstancesTenantId}}/payment-allocations'
@@ -1322,7 +1322,7 @@ entries:
   formFields: []
   authType: none
   authDetail: ''
-  capturedAt: 2026-05-26T08:29:27.369816Z
+  capturedAt: 2026-07-22T05:23:30.501547Z
 - requestPath: Testing/Payments/payments--id.yml
   method: GET
   urlPattern: '{{NetworkUrl}}/datasets/{{networkProductInstancesTenantId}}/payments/:id'
@@ -1331,7 +1331,7 @@ entries:
   formFields: []
   authType: none
   authDetail: ''
-  capturedAt: 2026-05-26T08:29:27.369822Z
+  capturedAt: 2026-07-22T05:23:30.501552Z
 - requestPath: Testing/Payments/payments.yml
   method: GET
   urlPattern: '{{NetworkUrl}}/datasets/{{networkProductInstancesTenantId}}/payments'
@@ -1340,7 +1340,7 @@ entries:
   formFields: []
   authType: none
   authDetail: ''
-  capturedAt: 2026-05-26T08:29:27.369827Z
+  capturedAt: 2026-07-22T05:23:30.501557Z
 - requestPath: Validation/VALIDATION Auth m2m.yml
   method: POST
   urlPattern: '{{sageIdURL}}/oauth/token'
@@ -1349,7 +1349,7 @@ entries:
   formFields: []
   authType: none
   authDetail: ''
-  capturedAt: 2026-05-26T08:29:27.369833Z
+  capturedAt: 2026-07-22T05:23:30.501561Z
 - requestPath: Validation/VALIDATION GET Users (NAS).yml
   method: GET
   urlPattern: '{{nasUrl}}/users/{{provisionAccountResponseUserId}}'
@@ -1360,7 +1360,7 @@ entries:
   formFields: []
   authType: none
   authDetail: ''
-  capturedAt: 2026-05-26T08:29:27.369838Z
+  capturedAt: 2026-07-22T05:23:30.501566Z
 - requestPath: Validation/VALIDATION GET account (NAS).yml
   method: GET
   urlPattern: '{{nasUrl}}/accounts/{{provisionAccountResponseAccountId}}'
@@ -1371,7 +1371,7 @@ entries:
   formFields: []
   authType: none
   authDetail: ''
-  capturedAt: 2026-05-26T08:29:27.369845Z
+  capturedAt: 2026-07-22T05:23:30.501571Z
 - requestPath: Validation/VALIDATION GET dataset (NAS).yml
   method: GET
   urlPattern: '{{nasUrl}}/datasets/{{networkProductInstancesTenantId}}'
@@ -1382,7 +1382,7 @@ entries:
   formFields: []
   authType: none
   authDetail: ''
-  capturedAt: 2026-05-26T08:29:27.369851Z
+  capturedAt: 2026-07-22T05:23:30.501577Z
 - requestPath: Validation/VALIDATION accounts  (Organisation service).yml
   method: GET
   urlPattern: '{{organisationServiceURL}}/accounts/{{provisionAccountResponseAccountId}}'
@@ -1393,7 +1393,7 @@ entries:
   formFields: []
   authType: none
   authDetail: ''
-  capturedAt: 2026-05-26T08:29:27.369857Z
+  capturedAt: 2026-07-22T05:23:30.501582Z
 - requestPath: Validation/VALIDATION businesses (Organisation service).yml
   method: GET
   urlPattern: '{{organisationServiceURL}}/businesses/{{provisionAccountResponseBusinessId}}'
@@ -1402,7 +1402,7 @@ entries:
   formFields: []
   authType: none
   authDetail: ''
-  capturedAt: 2026-05-26T08:29:27.369863Z
+  capturedAt: 2026-07-22T05:23:30.501588Z
 - requestPath: Validation/VALIDATION product instances  (Organisation service).yml
   method: GET
   urlPattern: '{{organisationServiceURL}}/accounts/{{provisionAccountResponseAccountId}}/product-instances'
@@ -1413,7 +1413,7 @@ entries:
   formFields: []
   authType: none
   authDetail: ''
-  capturedAt: 2026-05-26T08:29:27.369870Z
+  capturedAt: 2026-07-22T05:23:30.501597Z
 - requestPath: Validation/VALIDATION userMangement Manual Step in browser.yml
   method: OPTIONS
   urlPattern: https://app.sandbox.sbc.sage.com/settings/user-management/users?tid={{networkProductInstancesTenantId}}
@@ -1423,7 +1423,7 @@ entries:
   formFields: []
   authType: none
   authDetail: ''
-  capturedAt: 2026-05-26T08:29:27.369877Z
+  capturedAt: 2026-07-22T05:23:30.501605Z
 - requestPath: appcall.yml
   method: GET
   urlPattern: ''
@@ -1432,7 +1432,7 @@ entries:
   formFields: []
   authType: none
   authDetail: ''
-  capturedAt: 2026-05-26T08:29:27.369883Z
+  capturedAt: 2026-07-22T05:23:30.501611Z
 - requestPath: onboard.yml
   method: POST
   urlPattern: https://int.network-eng.sage.com/inbox/api/v3/onboard
@@ -1496,4 +1496,4 @@ entries:
   formFields: []
   authType: none
   authDetail: ''
-  capturedAt: 2026-05-26T08:29:27.369892Z
+  capturedAt: 2026-07-22T05:23:30.501622Z
