@@ -1426,13 +1426,13 @@ entries:
   capturedAt: 2026-05-26T08:29:27.369877Z
 - requestPath: appcall.yml
   method: GET
-  urlPattern: ''
+  urlPattern: https://localhost:8080/api/v1/data?Sdd=sddd
   headers: []
   queryParams: []
   formFields: []
   authType: none
   authDetail: ''
-  capturedAt: 2026-05-26T08:29:27.369883Z
+  capturedAt: 2026-07-28T16:49:41.848568Z
 - requestPath: onboard.yml
   method: POST
   urlPattern: https://int.network-eng.sage.com/inbox/api/v3/onboard
