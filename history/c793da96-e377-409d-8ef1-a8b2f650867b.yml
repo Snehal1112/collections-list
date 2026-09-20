@@ -1,9 +1,0 @@
-id: c793da96-e377-409d-8ef1-a8b2f650867b
-method: GET
-url: https://id-shadow.sage.com/userinfo/ju
-status: 404
-durationMs: 636
-responseSize: 10
-timestamp: 2026-05-18T10:11:34.444158Z
-collection: null
-requestName: null

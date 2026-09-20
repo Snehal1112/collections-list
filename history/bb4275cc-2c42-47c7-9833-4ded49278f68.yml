@@ -1,9 +1,0 @@
-id: bb4275cc-2c42-47c7-9833-4ded49278f68
-method: GET
-url: https://qa.network-eng.sage.com/portal/api/api/v3/status?user_type=customer&clear_cache=true
-status: 401
-durationMs: 280
-responseSize: 0
-timestamp: 2026-04-21T11:53:49.757273Z
-collection: null
-requestName: null

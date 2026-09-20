@@ -1,8 +1,0 @@
-uid: 3b4f062d-5b45-4c97-a95c-20119129382e
-info:
-  name: see UBL
-  type: http
-  seq: 4
-http:
-  method: GET
-  url: '{{attachmentdownloadUrl}}'

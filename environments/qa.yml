@@ -1,4 +1,0 @@
-name: qa
-variables:
-- name: app
-  value: Https://localhost:9898

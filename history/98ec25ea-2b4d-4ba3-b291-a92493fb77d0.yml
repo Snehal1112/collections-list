@@ -1,9 +1,0 @@
-id: 98ec25ea-2b4d-4ba3-b291-a92493fb77d0
-method: DELETE
-url: https://jsonplaceholder.typicode.com/posts/1
-status: 200
-durationMs: 266
-responseSize: 2
-timestamp: 2026-05-15T03:25:21.297760Z
-collection: null
-requestName: null

@@ -1,8 +1,0 @@
-uid: c12b8753-3179-4de7-93ff-754c965ca441
-info:
-  name: Attachment Download API
-  type: http
-  seq: 11
-http:
-  method: GET
-  url: '{{sageNetworkBaseUrl}}/connectors/erp/datasets/{{networkProductInstancesTenantIdBuyer}}/attachments/ef8c30e3-741f-4833-be46-218b05209874'

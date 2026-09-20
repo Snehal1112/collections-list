@@ -1,8 +1,0 @@
-uid: 19c5db1c-92d2-4abb-9e12-a084dc07d603
-info:
-  name: Retrieve Sync Task
-  type: http
-  seq: 11
-http:
-  method: GET
-  url: '{{sageNetworkBaseUrl}}/connectors/erp/datasets/{{networkProductInstancesTenantIdBuyer}}/sync-tasks/d543e009-475a-4251-8c28-a127e69ffa94?include=Details'
