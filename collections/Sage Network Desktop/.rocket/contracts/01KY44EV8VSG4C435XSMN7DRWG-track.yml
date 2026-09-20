@@ -1,0 +1,1499 @@
+contractId: 01KY44EV8VSG4C435XSMN7DRWG
+entries:
+- requestPath: Ads Status Call.yml
+  method: GET
+  urlPattern: https://api-int.network-eng.sage.com/api/v1/status/sdddd
+  headers: []
+  queryParams: []
+  formFields: []
+  authType: none
+  authDetail: ''
+  capturedAt: 2026-07-22T05:23:30.501030Z
+- requestPath: Get Status Self Service.yml
+  method: GET
+  urlPattern: https://int.network-eng.sage.com/portal/api/api/v3/status?user_type=customer&dataset_id=25a77b24-0092-6be0-92e6-34d0aae4e471&clear_cache=false
+  headers:
+  - key: accept
+    value: text/plain
+  - key: accept-language
+    value: en-US,en;q=0.9
+  - key: applicationname
+    value: Sage Connect UI
+  - key: authorization
+    value: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InpRTEFFQjdGRkFIcmlRNFFoMTJRSyJ9.eyJodHRwczovL3NhZ2UuY29tL3NjaS9pZHAiOiJDbG91ZElEIiwiaXNzIjoiaHR0cHM6Ly9pZC1zaGFkb3cuc2FnZS5jb20vIiwic3ViIjoiYXV0aDB8MjMxNGUxNDE4NTQ3NTE5OGI2OWMxYzJjMjdmOGRmNGY3MTk0YzMwYjZkODE2MWNkIiwiYXVkIjpbInNuZXQtZGV2L25ldHdvcmsvYXBpIiwiaHR0cHM6Ly9zYWdlLWNpZC1zaGFkb3cuc2FnZWlkbm9ucHJvZC5hdXRoMGFwcC5jb20vdXNlcmluZm8iXSwiaWF0IjoxNzcyMTg0MTk1LCJleHAiOjE3NzIyMTI5OTUsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJhenAiOiJTUUR5aWlDSXJPemQyZ2c2SkRueXVVN2FrSjhBU002TCJ9.m7HBQCL7kzcGI5-rT3HeqP_CeAjOkDjxktsO3Sp-poW7kxV7MpXU2R7M-9ZXwTNDYpZqUjyLdZsX5rgwwvXY5GyiPqAJrm3nS9AJvpb888heiTdJA4ms0LJGVPG_1cFWERhKCHJaOxxWsQ9zfwN5xnjrCQAa-15mC3T2R90NmGd84JuOBWpQzQTrtJNlKrAbrlf_QkYD0keeOaelFhZqydKKMqQR1osXmhb0Z3SneIkdjnyKcgdscJL1nvvOnjJ6YMgQ1-SiY6hH0q3JtQR94aqitRNfyTRY03fR6g_v7zTYcu6SGVHS5mjw4sihNPhOpDjYqwb7E30Io5awbvAt4A
+  - key: cache-control
+    value: no-cache
+  - key: Cookie
+    value: _cfuvid=s_saRa3hVn_nsKsZ2IWz8v3vF6wEJ1peLQOgPPKLGGA-1771922001730-0.0.1.1-604800000; _ga=GA1.2.318958323.1737016726; _hjSessionUser_2594103=eyJpZCI6ImQ5NzQwMTFlLTI2ZjUtNTY5MS05YTJhLTRkNDNlZWY5ZDlmYyIsImNyZWF0ZWQiOjE3NzE5MjYyOTY2NzksImV4aXN0aW5nIjp0cnVlfQ==; _ga_LSV9NWWG90=GS2.1.s1771978824$o2$g0$t1771978824$j60$l0$h0; utag_main=v_id:019c31fc2a2a0000423defb609d305075001b06d00942$_sn:5$_se:2%3Bexp-session$_ss:0%3Bexp-session$_st:1772091275403%3Bexp-session$ses_id:1772089474928%3Bexp-session$_pn:1%3Bexp-session; _legacy_auth0.SQDyiiCIrOzd2gg6JDnyuU7akJ8ASM6L.is.authenticated=true; auth0.SQDyiiCIrOzd2gg6JDnyuU7akJ8ASM6L.is.authenticated=true; cf_clearance=Y3YT4mHbcwKIgq0j0L5UjVu6Iloq1F3CRWAQEoanDrc-1772171813-1.2.1.1-jirZFRJpj2WQTPVi1i07lLKvw83xE0dOBGLlZHhiluEw7G.nHHS_bFHRVpSgOPIK2tx9oHQIt6eFRD8j.pwpq_mRY.w_yypybIwh5_eCybEFCTh3fkynDM_96wDb2bbfIsCdgsJtXi_H1_.TfYJZp08HFGn3DaoQH.D0Dj_vouwsypocLtEEyqOV7qJ1Pi4vDXdkMsQjbQxJDuYWlLBtWqPZReUWJUD6jB9q.JxsgyQ; __cf_bm=frlv1ajhHj5lG5XfZJT30hqcw4u3yk2hoR8Unsl4h74-1772182773-1.0.1.1-K9_E1NRkwo7ZTtJ4lLqEaRBnRA31LJrKRyZerQmT2cBq4uvxZTpPe9s.KG6jTNNUne6epnBXK.8mGsygsBbJlC7vssniSBv0eTodzGMf27k; __cf_bm=agOH3Yx_X6oCzz0JLjHvOlTZVWJ09m7xRlW3xQlLKyw-1772184196-1.0.1.1-fS4Nhy47NZGWw5f0ahDLcS4RqW9HMVjAIRr6BcEpfq97m7zjcRtQxao2fy5J0u5lxZpO50PpjRQUHcNPgIUfsJTlbA1oTPwE3Kv0yteTux8; _cfuvid=Nl_DjON4l6L8IoYCV0BlC0rqqR_ejgsiTL0iFPTR7BY-1772184196236-0.0.1.1-604800000
+  - key: dnt
+    value: '1'
+  - key: expires
+    value: '-1'
+  - key: group-key
+    value: 25a77b24-0092-6be0-92e6-34d0aae4e471
+  - key: newrelic
+    value: eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjYyMjAyNDMiLCJhcCI6IjU5NDU3Mzg2OCIsImlkIjoiYTIyZDcyMDYyMmUzMjJmNiIsInRyIjoiZTEwMTg0Y2YyMDg5ZWU3M2UwMWY1NTY1Y2RmZDFmNzMiLCJ0aSI6MTc3MjE4NDE5NjI2NSwidGsiOiIzMDQ1NTcwIn19
+  - key: pragma
+    value: no-cache
+  - key: priority
+    value: u=1, i
+  - key: referer
+    value: https://int.network-eng.sage.com/app/home
+  - key: sec-ch-ua
+    value: '"Not:A-Brand";v="99", "Google Chrome";v="145", "Chromium";v="145"'
+  - key: sec-ch-ua-mobile
+    value: ?0
+  - key: sec-ch-ua-platform
+    value: '"macOS"'
+  - key: sec-fetch-dest
+    value: empty
+  - key: sec-fetch-mode
+    value: cors
+  - key: sec-fetch-site
+    value: same-origin
+  - key: traceparent
+    value: 00-e10184cf2089ee73e01f5565cdfd1f73-a22d720622e322f6-01
+  - key: tracestate
+    value: 3045570@nr=0-1-6220243-594573868-a22d720622e322f6----1772184196265
+  - key: user-agent
+    value: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+  - key: x-group-key
+    value: 25a77b24-0092-6be0-92e6-34d0aae4e471
+  - key: x-requested-with
+    value: XMLHttpRequest
+  queryParams: []
+  formFields: []
+  authType: none
+  authDetail: ''
+  capturedAt: 2026-07-22T05:23:30.501044Z
+- requestPath: Onboarding/2. User information.yml
+  method: GET
+  urlPattern: '{{sageIdURL}}/userinfo/sddd'
+  headers:
+  - key: Sdddd
+    value: dddd
+  queryParams: []
+  formFields: []
+  authType: none
+  authDetail: ''
+  capturedAt: 2026-07-22T05:23:30.501047Z
+- requestPath: Onboarding/3. ProvisionAccount returns 202.yml
+  method: POST
+  urlPattern: '{{connectedBridgeURL}}/provision/account'
+  headers:
+  - key: Content-Type
+    value: application/json
+  - key: X-Idempotency-Key
+    value: '{{provisionAccountIdempotency}}'
+  queryParams: []
+  bodyContent: |-
+    {
+      "User": {
+        "Email": "{{provisionAccountEmail}}",
+        "FirstName": "{{$randomFirstName}}",
+        "LastName": "{{$randomLastName}}",
+        "Locale": "fr-FR"
+      },
+      "Account": {},
+      "ProductSubscription": {
+        "ManagingAccountId": "{{provisionAccountManagingAccountId}}",
+        "SubscriptionId": "{{provisionAccountSubscriptionId}}",
+        "Origin": "{{origin}}",
+        "BackOfficeId": "{{provisionAccountBackOfficeId}}",
+        "BackOfficeSource": "{{STSProvider}}"
+      },
+      "ProductLicences": [
+        {
+          "Product": "{{productCode}}",
+          "ProductLicenseType": "{{productLicenseType}}",
+          "Expires": "2027-03-12 10:38:14Z"
+        },
+        {
+          "Product": "network",
+          "ProductLicenseType": "network-standard",
+          "Expires": "2027-09-30T10:48:24+00:00"
+        }
+        //       Uncomment-this for testing hybrid scenario
+    //             {
+    //                 "Product": "sageconnect",
+    //                 "ProductLicenseType": "sageconnect_ar_auto_base",
+    //                 "Expires": "2027-09-30T10:48:24+00:00"
+    //             }
+      ],
+      "Licence": {
+        "Application": "{{STSApplication}}",
+        "Version": "{{STSVersion}}",
+        "Provider": "{{STSProvider}}",
+        "LicenceData": "{{STSLicenseData}}"
+      },
+      "Business": {
+        "Name": "{{provisionAccountName}}",
+        "ExternalId": "{{provisionAccountExternalId}}",
+        "ExternalSource": "Sage Desktop",
+        "RegisteredLocation": "{{registeredCountry}}",
+        "RegisteredCountry": "{{registeredCountry}}",
+        "BusinessAddress": {
+          "Type": "main",
+          "Line1": "Sage",
+          "Country": "{{registeredCountry}}"
+        },
+        "ProductInstance": {
+          "Name": "{{productCode}}",
+          "ProductCode": "{{productCode}}"
+        }
+      }
+    }
+  formFields: []
+  authType: none
+  authDetail: ''
+  capturedAt: 2026-07-22T05:23:30.501385Z
+- requestPath: Onboarding/4. Poll Provision Account.yml
+  method: POST
+  urlPattern: '{{connectedBridgeURL}}/provision/account'
+  headers:
+  - key: Content-Type
+    value: application/json
+  - key: X-Idempotency-Key
+    value: '{{provisionAccountIdempotency}}'
+  queryParams: []
+  bodyContent: |-
+    {
+      "User": {
+        "Email": "{{provisionAccountEmail}}",
+        "FirstName": "{{$randomFirstName}}",
+        "LastName": "{{$randomLastName}}",
+        "Locale": "en-GB"
+      },
+      "Account": {},
+      "ProductSubscription": {
+        "ManagingAccountId": "{{provisionAccountManagingAccountId}}",
+        "SubscriptionId": "{{provisionAccountSubscriptionId}}",
+        "Origin": "{{origin}}",
+        "BackOfficeId": "{{provisionAccountBackOfficeId}}",
+        "BackOfficeSource": "{{STSProvider}}"
+      },
+      "ProductLicences": [
+        {
+          "Product": "{{productCode}}",
+          "ProductLicenseType": "{{productLicenseType}}",
+          "Expires": "2027-03-12 10:38:14Z"
+        },
+        {
+          "Product": "network",
+          "ProductLicenseType": "network-standard",
+          "Expires": "2027-09-30T10:48:24+00:00"
+        },
+        //       Uncomment-this for testing hybrid scenario
+                {
+                    "Product": "sageconnect",
+                    "ProductLicenseType": "sageconnect_ar_auto_base",
+                    "Expires": "2027-09-30T10:48:24+00:00"
+                }
+      ],
+      "Licence": {
+        "Application": "{{STSApplication}}",
+        "Version": "{{STSVersion}}",
+        "Provider": "{{STSProvider}}",
+        "LicenceData": "{{STSLicenseData}}"
+      },
+      "Business": {
+        "Name": "{{provisionAccountName}}",
+        "ExternalId": "{{provisionAccountExternalId}}",
+        "ExternalSource": "Sage Desktop",
+        "RegisteredLocation": "{{registeredCountry}}",
+        "RegisteredCountry": "{{registeredCountry}}",
+        "BusinessAddress": {
+          "Type": "main",
+          "Line1": "Sage",
+          "Country": "{{registeredCountry}}"
+        },
+        "ProductInstance": {
+          "Name": "{{productCode}}",
+          "ProductCode": "{{productCode}}"
+        }
+      }
+    }
+  formFields: []
+  authType: none
+  authDetail: ''
+  capturedAt: 2026-07-22T05:23:30.501388Z
+- requestPath: Onboarding/5. Sage Network authorisation.yml
+  method: GET
+  urlPattern: http://
+  headers:
+  - key: Content-Type
+    value: application/x-www-form-urlencoded
+  - key: Cookie
+    value: __cf_bm=8ILp6kipxhJx.bzhfft_TMU2wyXIHoe09FoAvgqCDHA-1705576945-1-AWMIFutymdC6ovzhSjcXyor7eqjmkyhJCesGrgiLEGFGwnYukkgg+2Tp2VWGwVj5QsIvS4swHGQD2u1OLUjUoCU=; did=s%3Av0%3Adb4d2310-b5f3-11ee-bfcc-918c56ccee10.1RBFJ%2FWRt28GBLTmi0jgDWJCvh69MZ6sx549sQzFHns; did_compat=s%3Av0%3Adb4d2310-b5f3-11ee-bfcc-918c56ccee10.1RBFJ%2FWRt28GBLTmi0jgDWJCvh69MZ6sx549sQzFHns
+  - key: Accept
+    value: application/json
+  queryParams: []
+  formFields: []
+  authType: none
+  authDetail: ''
+  capturedAt: 2026-07-22T05:23:30.501392Z
+- requestPath: Onboarding (Network as Default)/2. User information.yml
+  method: GET
+  urlPattern: '{{sageIdURL}}/userinfo'
+  headers: []
+  queryParams: []
+  formFields: []
+  authType: none
+  authDetail: ''
+  capturedAt: 2026-07-22T05:23:30.501394Z
+- requestPath: Onboarding (Network as Default)/3. ProvisionAccount returns 202.yml
+  method: POST
+  urlPattern: '{{connectedBridgeURL}}/provision/account'
+  headers:
+  - key: Content-Type
+    value: application/json
+  - key: X-Idempotency-Key
+    value: '{{provisionAccountIdempotency}}'
+  queryParams: []
+  bodyContent: |-
+    {
+        "User": {
+            "Email": "{{provisionAccountEmail}}",
+            "FirstName": "{{$randomFirstName}}",
+            "LastName": "{{$randomLastName}}",
+            "Locale": "en-US"
+        },
+        "Account": {},
+        "ProductSubscription": {
+            "ManagingAccountId": "{{provisionAccountManagingAccountId}}",
+            "SubscriptionId": "{{provisionAccountSubscriptionId}}",
+            "Origin": "{{origin}}",
+            "BackOfficeId": "{{provisionAccountBackOfficeId}}",
+            "BackOfficeSource": "{{STSProvider}}"
+        },
+        "ProductLicences": [
+            {
+                "Product": "{{productCode}}",
+                "ProductLicenseType": "{{productLicenseType}}",
+                "Expires": "2027-03-12 10:38:14Z"
+            },
+            {
+                "Product": "{{scProductCode}}",
+                "ProductLicenseType": "{{scLicense}}",
+                "Expires": "2027-09-30T10:48:24+00:00"
+            }
+        ],
+        "Licence": {
+            "Application": "{{STSApplication}}",
+            "Version": "{{STSVersion}}",
+            "Provider": "{{STSProvider}}",
+            "LicenceData": "{{STSLicenseData}}"
+        },
+        "Business": {
+            "Name": "{{provisionAccountName}}",
+            "ExternalId": "{{provisionAccountExternalId}}",
+            "ExternalSource": "Sage Desktop",
+            "RegisteredLocation": "{{registeredCountry}}",
+            "RegisteredCountry": "{{registeredCountry}}",
+            "BusinessAddress": {
+                "Type": "main",
+                "Line1": "Sage",
+                "Country": "{{registeredCountry}}"
+            },
+            "ProductInstance": {
+                "Name": "{{productCode}}",
+                "ProductCode": "{{productCode}}"
+            }
+        }
+    }
+  formFields: []
+  authType: none
+  authDetail: ''
+  capturedAt: 2026-07-22T05:23:30.501397Z
+- requestPath: Onboarding (Network as Default)/4. Poll Provision Account.yml
+  method: POST
+  urlPattern: '{{connectedBridgeURL}}/provision/account'
+  headers:
+  - key: Content-Type
+    value: application/json
+  - key: X-Idempotency-Key
+    value: '{{provisionAccountIdempotency}}'
+  queryParams: []
+  bodyContent: |-
+    {
+        "User": {
+            "Email": "{{provisionAccountEmail}}",
+            "FirstName": "{{$randomFirstName}}",
+            "LastName": "{{$randomLastName}}",
+            "Locale": "en-US"
+        },
+        "Account": {},
+        "ProductSubscription": {
+            "ManagingAccountId": "{{provisionAccountManagingAccountId}}",
+            "SubscriptionId": "{{provisionAccountSubscriptionId}}",
+            "Origin": "{{origin}}",
+            "BackOfficeId": "{{provisionAccountBackOfficeId}}",
+            "BackOfficeSource": "{{STSProvider}}"
+        },
+        "ProductLicences": [
+            {
+                "Product": "{{productCode}}",
+                "ProductLicenseType": "{{productLicenseType}}",
+                "Expires": "2027-03-12 10:38:14Z"
+            },
+            {
+                "Product": "{{scProductCode}}",
+                "ProductLicenseType": "{{scLicense}}",
+                "Expires": "2027-09-30T10:48:24+00:00"
+            }
+        ],
+        "Licence": {
+            "Application": "{{STSApplication}}",
+            "Version": "{{STSVersion}}",
+            "Provider": "{{STSProvider}}",
+            "LicenceData": "{{STSLicenseData}}"
+        },
+        "Business": {
+            "Name": "{{provisionAccountName}}",
+            "ExternalId": "{{provisionAccountExternalId}}",
+            "ExternalSource": "Sage Desktop",
+            "RegisteredLocation": "{{registeredCountry}}",
+            "RegisteredCountry": "{{registeredCountry}}",
+            "BusinessAddress": {
+                "Type": "main",
+                "Line1": "Sage",
+                "Country": "{{registeredCountry}}"
+            },
+            "ProductInstance": {
+                "Name": "{{productCode}}",
+                "ProductCode": "{{productCode}}"
+            }
+        }
+    }
+  formFields: []
+  authType: none
+  authDetail: ''
+  capturedAt: 2026-07-22T05:23:30.501400Z
+- requestPath: Onboarding (Network as Default)/5. Sage Network authorisation.yml
+  method: GET
+  urlPattern: http://
+  headers:
+  - key: Content-Type
+    value: application/x-www-form-urlencoded
+  - key: Cookie
+    value: __cf_bm=8ILp6kipxhJx.bzhfft_TMU2wyXIHoe09FoAvgqCDHA-1705576945-1-AWMIFutymdC6ovzhSjcXyor7eqjmkyhJCesGrgiLEGFGwnYukkgg+2Tp2VWGwVj5QsIvS4swHGQD2u1OLUjUoCU=; did=s%3Av0%3Adb4d2310-b5f3-11ee-bfcc-918c56ccee10.1RBFJ%2FWRt28GBLTmi0jgDWJCvh69MZ6sx549sQzFHns; did_compat=s%3Av0%3Adb4d2310-b5f3-11ee-bfcc-918c56ccee10.1RBFJ%2FWRt28GBLTmi0jgDWJCvh69MZ6sx549sQzFHns
+  - key: Accept
+    value: application/json
+  queryParams: []
+  formFields: []
+  authType: none
+  authDetail: ''
+  capturedAt: 2026-07-22T05:23:30.501404Z
+- requestPath: Portal User Datasets.yml
+  method: GET
+  urlPattern: https://int.network-eng.sage.com/portal/api/api/v3/user_datasets
+  headers:
+  - key: accept
+    value: text/plain
+  - key: accept-language
+    value: en-US,en;q=0.9
+  - key: applicationname
+    value: Sage Connect UI
+  - key: authorization
+    value: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InpRTEFFQjdGRkFIcmlRNFFoMTJRSyJ9.eyJodHRwczovL3NhZ2UuY29tL3NjaS9pZHAiOiJDbG91ZElEIiwiaXNzIjoiaHR0cHM6Ly9pZC1zaGFkb3cuc2FnZS5jb20vIiwic3ViIjoiYXV0aDB8MjMxNGUxNDE4NTQ3NTE5OGI2OWMxYzJjMjdmOGRmNGY3MTk0YzMwYjZkODE2MWNkIiwiYXVkIjpbInNuZXQtZGV2L25ldHdvcmsvYXBpIiwiaHR0cHM6Ly9zYWdlLWNpZC1zaGFkb3cuc2FnZWlkbm9ucHJvZC5hdXRoMGFwcC5jb20vdXNlcmluZm8iXSwiaWF0IjoxNzcyMTg0MTk1LCJleHAiOjE3NzIyMTI5OTUsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJhenAiOiJTUUR5aWlDSXJPemQyZ2c2SkRueXVVN2FrSjhBU002TCJ9.m7HBQCL7kzcGI5-rT3HeqP_CeAjOkDjxktsO3Sp-poW7kxV7MpXU2R7M-9ZXwTNDYpZqUjyLdZsX5rgwwvXY5GyiPqAJrm3nS9AJvpb888heiTdJA4ms0LJGVPG_1cFWERhKCHJaOxxWsQ9zfwN5xnjrCQAa-15mC3T2R90NmGd84JuOBWpQzQTrtJNlKrAbrlf_QkYD0keeOaelFhZqydKKMqQR1osXmhb0Z3SneIkdjnyKcgdscJL1nvvOnjJ6YMgQ1-SiY6hH0q3JtQR94aqitRNfyTRY03fR6g_v7zTYcu6SGVHS5mjw4sihNPhOpDjYqwb7E30Io5awbvAt4A
+  - key: cache-control
+    value: no-cache
+  - key: Cookie
+    value: _cfuvid=s_saRa3hVn_nsKsZ2IWz8v3vF6wEJ1peLQOgPPKLGGA-1771922001730-0.0.1.1-604800000; _ga=GA1.2.318958323.1737016726; _hjSessionUser_2594103=eyJpZCI6ImQ5NzQwMTFlLTI2ZjUtNTY5MS05YTJhLTRkNDNlZWY5ZDlmYyIsImNyZWF0ZWQiOjE3NzE5MjYyOTY2NzksImV4aXN0aW5nIjp0cnVlfQ==; _ga_LSV9NWWG90=GS2.1.s1771978824$o2$g0$t1771978824$j60$l0$h0; utag_main=v_id:019c31fc2a2a0000423defb609d305075001b06d00942$_sn:5$_se:2%3Bexp-session$_ss:0%3Bexp-session$_st:1772091275403%3Bexp-session$ses_id:1772089474928%3Bexp-session$_pn:1%3Bexp-session; _legacy_auth0.SQDyiiCIrOzd2gg6JDnyuU7akJ8ASM6L.is.authenticated=true; auth0.SQDyiiCIrOzd2gg6JDnyuU7akJ8ASM6L.is.authenticated=true; cf_clearance=Y3YT4mHbcwKIgq0j0L5UjVu6Iloq1F3CRWAQEoanDrc-1772171813-1.2.1.1-jirZFRJpj2WQTPVi1i07lLKvw83xE0dOBGLlZHhiluEw7G.nHHS_bFHRVpSgOPIK2tx9oHQIt6eFRD8j.pwpq_mRY.w_yypybIwh5_eCybEFCTh3fkynDM_96wDb2bbfIsCdgsJtXi_H1_.TfYJZp08HFGn3DaoQH.D0Dj_vouwsypocLtEEyqOV7qJ1Pi4vDXdkMsQjbQxJDuYWlLBtWqPZReUWJUD6jB9q.JxsgyQ; __cf_bm=frlv1ajhHj5lG5XfZJT30hqcw4u3yk2hoR8Unsl4h74-1772182773-1.0.1.1-K9_E1NRkwo7ZTtJ4lLqEaRBnRA31LJrKRyZerQmT2cBq4uvxZTpPe9s.KG6jTNNUne6epnBXK.8mGsygsBbJlC7vssniSBv0eTodzGMf27k; __cf_bm=n15kiJvcWddqzxsv2VmypxC8Q3bdLvck3YH7UDbb9.Y-1772184232-1.0.1.1-IQyeXzxp4_tlExOeMSYNNLAq2qjTWN5S3lbP2cwHqCEdpjIg69P8aJaz55hY0GtTTYiOffM8uk4p9eEouVoO1cWdCJZOjNeuWuYy6Sve1W4; _cfuvid=ZklHHne4Ws3ByjHJdR0KFN7IfFWV124QzAz3UPb4W3c-1772184232517-0.0.1.1-604800000
+  - key: dnt
+    value: '1'
+  - key: expires
+    value: '-1'
+  - key: group-key
+    value: 25a77b24-0092-6be0-92e6-34d0aae4e471
+  - key: newrelic
+    value: eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjYyMjAyNDMiLCJhcCI6IjU5NDU3Mzg2OCIsImlkIjoiYzA2MjI5MzhmZWQ4ODRkNiIsInRyIjoiYmEwOGQ1NjdhYmFkYTljZTNlZjU5NjhjOWU1N2RiMGEiLCJ0aSI6MTc3MjE4NDIzMjY1MiwidGsiOiIzMDQ1NTcwIn19
+  - key: pragma
+    value: no-cache
+  - key: priority
+    value: u=1, i
+  - key: referer
+    value: https://int.network-eng.sage.com/app/home
+  - key: sec-ch-ua
+    value: '"Not:A-Brand";v="99", "Google Chrome";v="145", "Chromium";v="145"'
+  - key: sec-ch-ua-mobile
+    value: ?0
+  - key: sec-ch-ua-platform
+    value: '"macOS"'
+  - key: sec-fetch-dest
+    value: empty
+  - key: sec-fetch-mode
+    value: cors
+  - key: sec-fetch-site
+    value: same-origin
+  - key: traceparent
+    value: 00-ba08d567abada9ce3ef5968c9e57db0a-c0622938fed884d6-01
+  - key: tracestate
+    value: 3045570@nr=0-1-6220243-594573868-c0622938fed884d6----1772184232652
+  - key: user-agent
+    value: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+  - key: x-group-key
+    value: 25a77b24-0092-6be0-92e6-34d0aae4e471
+  - key: x-requested-with
+    value: XMLHttpRequest
+  queryParams: []
+  formFields: []
+  authType: none
+  authDetail: ''
+  capturedAt: 2026-07-22T05:23:30.501413Z
+- requestPath: Sage Connect/Status.yml
+  method: GET
+  urlPattern: https://dev.network-eng.sage.com/portal/api/api/v3/status?user_type=customer&clear_cache=true
+  headers:
+  - key: accept
+    value: text/plain
+  - key: accept-language
+    value: en-US,en;q=0.9
+  - key: applicationname
+    value: Sage Connect UI
+  - key: authorization
+    value: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InpRTEFFQjdGRkFIcmlRNFFoMTJRSyJ9.eyJodHRwczovL3NhZ2UuY29tL3NjaS9pZHAiOiJDbG91ZElEIiwiaXNzIjoiaHR0cHM6Ly9pZC1zaGFkb3cuc2FnZS5jb20vIiwic3ViIjoiYXV0aDB8ZTA3NmI4OWQ4NDI5NDY0YWIwMGVhYmNhZWNlZDRjMzM4NWI3NGIyOWViZmM5YWI2IiwiYXVkIjpbInNuZXQtZGV2L25ldHdvcmsvYXBpIiwiaHR0cHM6Ly9zYWdlLWNpZC1zaGFkb3cuc2FnZWlkbm9ucHJvZC5hdXRoMGFwcC5jb20vdXNlcmluZm8iXSwiaWF0IjoxNzcxOTIzMDIwLCJleHAiOjE3NzE5NTE4MjAsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJhenAiOiJ1anozR05waWVpb3VCVjRuSjlmR1ZWcUF6SjdpWEtLcSJ9.YQk54mpzgoIBEg0klElbqfVvBcH9XZvjtVV0EUjFUlkjnpEokykyEqQSFF4wpI8iS8q_Ax_vT8G9jk1A3RReLUZEVNodzzDjxbrmhofQE_3j0C0-fGGmu6F0rPe2B8txTt8IIJGlKc7L98mLe1OrBdQ6BaF7pzzyYAIvkKe5wXrLydviLJ2N1jv6frAN1oLXmjrYCZk-t1JeJeGCo_km1e2SnNiAcexTU6xIJq4Pbib4PjtuRACdT9Aw2V9FRSSDjlv5UVTjC3aRKD63khMk3qez55NNMrOfboj0tOMvHktE6ZmTHUBIkJmEVM_yYSp7WboMN5smQkaJC3Lvofr7YQ
+  - key: cache-control
+    value: no-cache
+  - key: Cookie
+    value: __cf_bm=jOzpKa3GJco5dc8V60twj1UkGqy5SVKQokDsvDjdr5k-1771922948-1.0.1.1-q.FwyUkj2huUOsrlmdlDYXTxQ0WrTUbDzMYwVdtj29pZHkWezYryfUQAvWqM4v4Xu3oR1RlB9WZ9xc36yFKdLJ2SJXlLjWs.AwxnaGEyEBI; _cfuvid=vrJX4KNapko09gSdyVM9tzQoo3ydc5j1dXD8J5enqVA-1771922948833-0.0.1.1-604800000; utag_main=v_id:019c8ed6e7520006850ed4f043970507d001b075009d8$_sn:1$_se:4%3Bexp-session$_ss:0%3Bexp-session$_st:1771924797278%3Bexp-session$ses_id:1771922974567%3Bexp-session$_pn:2%3Bexp-session; _legacy_auth0.ujz3GNpieiouBV4nJ9fGVVqAzJ7iXKKq.is.authenticated=true; auth0.ujz3GNpieiouBV4nJ9fGVVqAzJ7iXKKq.is.authenticated=true
+  - key: expires
+    value: '-1'
+  - key: group-key
+    value: ''
+  - key: newrelic
+    value: eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjYyMjAyNDMiLCJhcCI6IjU5NDU3Mzg2NyIsImlkIjoiOGRjNWVlYTE3ZTQyNDE3YSIsInRyIjoiNzdjMWJlODRhMTA0N2I0ZWQyZmZmYmU3ZGQyOGMzNTgiLCJ0aSI6MTc3MTkyMzAyMTcyNiwidGsiOiIzMDQ1NTcwIn19
+  - key: pragma
+    value: no-cache
+  - key: priority
+    value: u=1, i
+  - key: referer
+    value: https://dev.network-eng.sage.com/?code=zgF2gSCXZAzuDS5u78dXJ960QE5jh-Trf4ZkUnS-4H7ku&state=aDFCeVZOd0tZZkNDaVNmdDRuZjFvV19LYTYudWwxczNCLmRkbFNuYi1HSg%3D%3D
+  - key: sec-ch-ua
+    value: '"Not(A:Brand";v="8", "Chromium";v="144", "Microsoft Edge";v="144"'
+  - key: sec-ch-ua-mobile
+    value: ?0
+  - key: sec-ch-ua-platform
+    value: '"Windows"'
+  - key: sec-fetch-dest
+    value: empty
+  - key: sec-fetch-mode
+    value: cors
+  - key: sec-fetch-site
+    value: same-origin
+  - key: traceparent
+    value: 00-77c1be84a1047b4ed2fffbe7dd28c358-8dc5eea17e42417a-01
+  - key: tracestate
+    value: 3045570@nr=0-1-6220243-594573867-8dc5eea17e42417a----1771923021726
+  - key: user-agent
+    value: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0
+  - key: x-requested-with
+    value: XMLHttpRequest
+  queryParams: []
+  formFields: []
+  authType: bearer
+  authDetail: eyJhbGci…
+  capturedAt: 2026-07-22T05:23:30.501423Z
+- requestPath: Sync using JSON/1. Create sync task.yml
+  method: POST
+  urlPattern: '{{connectorBaseUrl}}/connectors/erp/datasets/{{networkProductInstancesTenantId}}}/sync-tasks'
+  headers:
+  - key: Content-Type
+    value: application/vnd.api+json
+  - key: Accept
+    value: application/vnd.api+json
+  - key: Idempotency-Key
+    value: '{{$guid}}'
+  queryParams: []
+  bodyContent: |-
+    {
+        "Data": {
+            "Attributes": {
+                "PackageType": "Full"
+            },
+            "Relationships": {
+                "Companies": {
+                    "data": [
+                        {
+                            "Id": "1041",
+                            "Type": "Company"
+                        }
+                    ]
+                },
+                "Contacts": {
+                    "data": [
+                        {
+                            "Id": "1360",
+                            "Type": "Contact"
+                        }
+                    ]
+                },
+                "Invoices": {
+                    "data": [
+                        {
+                            "Id": "183705",
+                            "Type": "Invoice"
+                        }
+                    ]
+                },
+                "InvoiceLines": {
+                    "data": [
+                        {
+                            "Id": "407628",
+                            "Type": "InvoiceLine"
+                        }
+                    ]
+                },
+                "Payments": {
+                    "data": [
+                        {
+                            "Id": "183680",
+                            "Type": "Payment"
+                        }
+                    ]
+                },
+                "PaymentAllocations": {
+                    "data": [
+                        {
+                            "Id": "41701",
+                            "Type": "PaymentApplication"
+                        }
+                    ]
+                },
+                "CreditAllocations": {
+                    "data": [
+                        {
+                            "Id": "12551",
+                            "Type": "CreaditMemoApplication"
+                        }
+                    ]
+                },
+                "FinancialYearSettings": {
+                    "data": [
+                        {
+                            "Id": "1",
+                            "Type": "FinancialYearSetting"
+                        }
+                    ]
+                },
+                "FinancialAccounts": {
+                    "data": [
+                        {
+                            "Id": "119",
+                            "Type": "FinancialAccount"
+                        }
+                    ]
+                },
+                "FinancialAccountBalanceHistories": {
+                    "data": [
+                        {
+                            "Id": "15",
+                            "Type": "FinancialAccountBalanceHistory"
+                        }
+                    ]
+                },
+                "BaseCurrencies": {
+                    "data": [
+                        {
+                            "Id": "1",
+                            "Type": "BaseCurrency"
+                        }
+                    ]
+                },
+                "CustomFields": {
+                    "data": [
+                        {
+                            "Id": "183705",
+                            "Type": "CustomField"
+                        }
+                    ]
+                },
+                "JournalEntries": {
+                    "data": [
+                        {
+                            "Id": "68736",
+                            "Type": "JournalEntry"
+                        }
+                    ]
+                },
+                "JournalEntryLines": {
+                    "data": [
+                        {
+                            "Id": "146336",
+                            "Type": "JournalEntryLine"
+                        }
+                    ]
+                },
+                "Attachments": null
+            },
+            "Id": null,
+            "Type": "SyncTask"
+        },
+        "Included": [
+            {
+                "id": "1041",
+                "type": "Company",
+                "attributes": {
+                    "operationType": "Insert",
+                    "companyName": "Ford INTACCT corporation",
+                    "companyType": "Customer",
+                    "NetworkId": null,
+                    "parentCompanyId": "14",
+                    "parentCompanyErpKey": "Company--14",
+                    "defaultCurrencyCode": "USD",
+                    "externalReference": "testsep_11",
+                    "taxId": "",
+                    "enterpriseId": "",
+                    "enterpriseErpKey": "",
+                    "timeStamp": "2023-12-22T13:19:43.083Z",
+                    "status": null,
+                    "message": null
+                },
+                "relationships": {
+                    "primaryContact": {
+                        "id": "1360",
+                        "type": "Contact"
+                    },
+                    "address": {
+                        "data": {
+                            "id": "1",
+                            "type": "Address"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "1048",
+                "type": "Company",
+                "attributes": {
+                    "operationType": "Insert",
+                    "companyName": "Ford INTACCT corporation",
+                    "companyType": "Customer",
+                    "NetworkId": null,
+                    "parentCompanyId": "14",
+                    "parentCompanyErpKey": "Company--14",
+                    "defaultCurrencyCode": "USD",
+                    "externalReference": "testsep_11",
+                    "taxId": "",
+                    "enterpriseId": "",
+                    "enterpriseErpKey": "",
+                    "timeStamp": "2023-12-22T13:19:43.083Z",
+                    "status": null,
+                    "message": null
+                },
+                "relationships": {
+                    "primaryContact": {
+                        "id": "1360",
+                        "type": "Contact"
+                    },
+                    "address": {
+                        "data": {
+                            "id": "1",
+                            "type": "Address"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "1099",
+                "type": "Company",
+                "attributes": {
+                    "operationType": "Insert",
+                    "companyName": "Ford INTACCT corporation",
+                    "companyType": "Customer",
+                    "NetworkId": null,
+                    "parentCompanyId": "14",
+                    "parentCompanyErpKey": "Company--14",
+                    "defaultCurrencyCode": "USD",
+                    "externalReference": "testsep_11",
+                    "taxId": "",
+                    "enterpriseId": "",
+                    "enterpriseErpKey": "",
+                    "timeStamp": "2023-12-22T13:19:43.083Z",
+                    "status": null,
+                    "message": null
+                },
+                "relationships": {
+                    "primaryContact": {
+                        "id": "1360",
+                        "type": "Contact"
+                    },
+                    "address": {
+                        "data": {
+                            "id": "1",
+                            "type": "Address"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "1044",
+                "type": "Company",
+                "attributes": {
+                    "operationType": "Insert",
+                    "companyName": "Ford INTACCT corporation",
+                    "companyType": "Customer",
+                    "NetworkId": null,
+                    "parentCompanyId": "14",
+                    "parentCompanyErpKey": "Company--14",
+                    "defaultCurrencyCode": "USD",
+                    "externalReference": "testsep_11",
+                    "taxId": "",
+                    "enterpriseId": "",
+                    "enterpriseErpKey": "",
+                    "timeStamp": "2023-12-22T13:19:43.083Z",
+                    "status": null,
+                    "message": null
+                },
+                "relationships": {
+                    "primaryContact": {
+                        "id": "1360",
+                        "type": "Contact"
+                    },
+                    "address": {
+                        "data": {
+                            "id": "1",
+                            "type": "Address"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "1360",
+                "type": "Contact",
+                "attributes": {
+                    "contactName": null,
+                    "title": null,
+                    "emailAddress": null,
+                    "phone": "09765997203",
+                    "fax": "",
+                    "address1": "666, guruwar peth, Mominpura, Above noble school",
+                    "address2": "pune 42",
+                    "address3": null,
+                    "city": "pune",
+                    "stateRegion": "Maharashtra",
+                    "postalCode": "411042",
+                    "countryCode": "US",
+                    "webpageUrl": null,
+                    "created": "2023-12-22T13:19:43.083Z",
+                    "modified": "2023-12-22T13:19:43.083Z"
+                }
+            },
+            {
+                "id": "183705",
+                "type": "Invoice",
+                "attributes": {
+                    "networkId": null,
+                    "operationType": "Insert",
+                    "invoiceReferenceCode": "84227",
+                    "sendImmediately": false,
+                    "isEInvoice": false,
+                    "invoiceType": "AR Invoice",
+                    "customerId": "B44A68B0-FFE2-4D7A-ACA4-119663F30DC1",
+                    "totalAmount": 100.0,
+                    "currencyCode": "USD",
+                    "invoiceDate": "2023-12-22T13:19:43.083Z",
+                    "created": "2023-12-22T13:19:43.083Z",
+                    "isDraft": true,
+                    "departmentErpKey": "1251A2FA-CFDD-440C-97E6-0018A3AEB14B",
+                    "description": null,
+                    "discountAmount": 0,
+                    "outstandingBalanceAmount": 100.0,
+                    "paymentDueDate": "2023-12-22T13:19:43.083Z",
+                    "paymentPriority": null,
+                    "purchaseOrderCode": "",
+                    "referenceCode": "84227",
+                    "salesPersonCode": null,
+                    "salesTaxAmount": 0,
+                    "termName": "",
+                    "companyErpKey": "33E72B9E-11EE-49C0-BC08-8DFBE25A0EB5",
+                    "timeStamp": "2023-12-22T13:19:43.083Z",
+                    "status": null,
+                    "message": null
+                },
+                "relationships": {
+                    "lines": [
+                        {
+                            "data": {
+                                "id": "407628",
+                                "type": "InvoiceLine"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "407628",
+                "type": "InvoiceLine",
+                "attributes": {
+                    "accountNo": null,
+                    "accountLabel": null,
+                    "departmentErpKey": null,
+                    "description": "",
+                    "lineNumber": "1",
+                    "locationErpKey": null,
+                    "offsetGlAccountNo": null,
+                    "productCode": "",
+                    "quantity": 0,
+                    "unitMeasureCode": null,
+                    "unitPrice": 0,
+                    "totalAmount": 100
+                }
+            },
+            {
+                "id": "183680",
+                "type": "Payment",
+                "attributes": {
+                    "NetworkId": null,
+                    "companyId": "33E72B9E-11EE-49C0-BC08-8DFBE25A0EB5",
+                    "CompanyErpKey": "Customer--107644",
+                    "paymentTypeCode": "AR Payment",
+                    "paymentAmount": 0,
+                    "currencyCode": "USD",
+                    "currencyRate": 1.0,
+                    "bankAccountId": null,
+                    "paymentDate": "2023-12-22T13:19:43.083Z",
+                    "postDate": "2023-12-22T13:19:43.083Z",
+                    "erpKey": "AR Payment--183680",
+                    "tenderType": "Cash",
+                    "memoText": null,
+                    "unappliedAmount": 0,
+                    "baseCurrencyPaymentAmount": 0,
+                    "baseCurrencyUnappliedAmount": 68.0,
+                    "timeStamp": "2023-12-22T13:19:43.083Z",
+                    "status": null,
+                    "message": null,
+                    "lastAttempted": "2023-12-22T13:19:43.083Z"
+                },
+                "relationships": {
+                    "company": {
+                        "data": {
+                            "id": "107644",
+                            "type": "Company"
+                        }
+                    },
+                    "applications": {
+                        "data": [
+                            {
+                                "id": "41701",
+                                "type": "PaymentApplication"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "id": "183705",
+                "type": "CustomField",
+                "attributes": {
+                    "onMatchAction": 0,
+                    "erpKey": "AR Invoice--183705",
+                    "tableKey": "Invoice",
+                    "customFieldLabel": "MY_INVOICE_CUSTOMFIELD"
+                }
+            },
+            {
+                "id": "1",
+                "type": "BaseCurrency",
+                "attributes": {
+                    "baseCurrencyCode": "USD"
+                }
+            },
+            {
+                "id": "119",
+                "type": "FinancialAccount",
+                "attributes": {
+                    "code": "9000",
+                    "ErpKey": "119",
+                    "name": "Manager",
+                    "status": "active",
+                    "cashflowType": "Operating Activities",
+                    "description": "Manager",
+                    "classification": "Asset",
+                    "category": "Accounts Receivable",
+                    "subcategory": "Accounts Receivable",
+                    "systemAccountType": null,
+                    "created": "2023-12-22T13:19:43.083Z",
+                    "createdUserId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                    "modified": "2023-12-22T13:19:43.083Z",
+                    "modifiedUserId": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+                }
+            },
+            {
+                "id": "1",
+                "type": "FinancialYearSetting",
+                "attributes": {
+                    "yearType": "Calendar",
+                    "totalPeriods": 12,
+                    "startDate": "01-01",
+                    "endDate": "12-31"
+                }
+            },
+            {
+                "id": "41701",
+                "type": "PaymentApplication",
+                "attributes": {
+                    "onMatchAction": 0,
+                    "erpKey": "AR Payment--183680--41701",
+                    "entryNumber": 410201,
+                    "applyToInvoiceDate": "2023-12-22T13:19:43.083Z",
+                    "paymentAppliedAmount": 4.0,
+                    "created": "2023-12-22T13:19:43.083Z",
+                    "modified": "2023-12-22T13:19:43.083Z"
+                },
+                "relationships": {
+                    "payment": {
+                        "data": {
+                            "id": "183680",
+                            "type": "Payment"
+                        }
+                    },
+                    "invoice": {
+                        "data": {
+                            "id": "183667",
+                            "type": "Invoice"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "146336",
+                "type": "GLEntryLine",
+                "attributes": {
+                    "erpKey": "146336",
+                    "accountNumber": "1100",
+                    "accountName": "1100",
+                    "debitAmount": 791715.0,
+                    "creditAmount": 0,
+                    "currencyCode": "USD",
+                    "baseDebit": 791715.0,
+                    "baseCredit": 0,
+                    "baseCurrencyCode": "USD",
+                    "createdUser": null,
+                    "memo": null,
+                    "created": "2023-12-22T13:19:43.083Z",
+                    "modified": "2023-12-22T13:19:43.083Z"
+                },
+                "relationships": {
+                    "financialAccount": {
+                        "data": {
+                            "id": "119",
+                            "type": "FinancialAccount"
+                        }
+                    },
+                    "journal": {
+                        "data": {
+                            "id": "1365--68754",
+                            "type": "Journal"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "68736",
+                "type": "GLEntry",
+                "attributes": {
+                    "erpKey": "ARJ--68736",
+                    "source": "",
+                    "postedDate": "2023-12-22T13:19:43.084Z",
+                    "journalDate": "2023-12-22T13:19:43.084Z",
+                    "statusCode": "Draft"
+                },
+                "relationships": {
+                    "company": {
+                        "id": "1041",
+                        "type": "Company"
+                    }
+                }
+            },
+            {
+                "id": "1",
+                "type": "Address",
+                "attributes": {
+                    "address1": "123 Accounting Lane",
+                    "address2": "Test Sample",
+                    "address3": "tableKey",
+                    "address4": "San Francisco",
+                    "countrySubdivision": "US",
+                    "postalCode": "125211",
+                    "country": "US"
+                }
+            }
+        ]
+    }
+  formFields: []
+  authType: none
+  authDetail: ''
+  capturedAt: 2026-07-22T05:23:30.501468Z
+- requestPath: Sync using JSON/2. Query sync task.yml
+  method: GET
+  urlPattern: '{{connectorBaseUrl}}/connectors/erp/datasets/{{networkProductInstancesTenantId}}/sync-tasks?filter=type eq ''toNetwork''&take=3&skip=0'
+  headers:
+  - key: accept
+    value: application/vnd.api+json
+  - key: Authorization
+    value: '{{bearer_token}}'
+  queryParams: []
+  formFields: []
+  authType: none
+  authDetail: ''
+  capturedAt: 2026-07-22T05:23:30.501472Z
+- requestPath: Sync using JSON/3. Query sync task with ID.yml
+  method: GET
+  urlPattern: '{{connectorBaseUrl}}/connectors/erp/datasets/{{networkProductInstancesTenantId}}/sync-tasks/{{connectorSyncTaskId}}?include=Details'
+  headers:
+  - key: accept
+    value: application/json
+  - key: Authorization
+    value: '{{BearerToken}}'
+  queryParams: []
+  formFields: []
+  authType: none
+  authDetail: ''
+  capturedAt: 2026-07-22T05:23:30.501475Z
+- requestPath: Sync using ZIP file/1. Create sync task.yml
+  method: POST
+  urlPattern: '{{connectorBaseUrl}}/connectors/erp/datasets/{{networkProductInstancesTenantId}}/sync-tasks'
+  headers:
+  - key: Content-Type
+    value: application/vnd.api+json
+  - key: Accept
+    value: application/vnd.api+json
+  - key: Idempotency-Key
+    value: '{{$guid}}'
+  queryParams: []
+  bodyContent: |-
+    {
+        "data": {
+            "type": "SyncTask",
+            "attributes": {
+                "packageType": "Full"
+            }
+        }
+    }
+  formFields: []
+  authType: none
+  authDetail: ''
+  capturedAt: 2026-07-22T05:23:30.501478Z
+- requestPath: Sync using ZIP file/2. Upload zip file.yml
+  method: PUT
+  urlPattern: '{{connectorBlobUploadUrl}}'
+  headers:
+  - key: Accept
+    value: application/vnd.api+json
+  - key: x-ms-blob-type
+    value: BlockBlob
+  queryParams: []
+  formFields: []
+  authType: none
+  authDetail: ''
+  capturedAt: 2026-07-22T05:23:30.501482Z
+- requestPath: Sync using ZIP file/3. Update sync task.yml
+  method: PATCH
+  urlPattern: '{{connectorBaseUrl}}/connectors/erp/datasets/{{networkProductInstancesTenantId}}/sync-tasks'
+  headers:
+  - key: Content-Type
+    value: application/vnd.api+json
+  - key: Accept
+    value: application/vnd.api+json
+  - key: Idempotency-Key
+    value: '{{$guid}}'
+  queryParams: []
+  bodyContent: |-
+    {
+        "data": {
+            "type": "synctask",
+            "id": "{{connectorSyncTaskId}}",
+            "attributes": {
+                "summary": {
+                    "totalInvoices": 0,
+                    "totalPayments": 0,
+                    "totalCompanies": 0,
+                    "totalContacts": 0,
+                    "totalGlAccounts": 0,
+                    "totalGlAccountEntries": 0,
+                    "totalCustomFields": 0
+                }
+            },
+            "relationships": {
+                "attachment": {
+                    "data": {
+                        "id": "{{connectorAttachmentId}}",
+                        "type": "attachment"
+                    }
+                }
+            }
+        }
+    }
+  formFields: []
+  authType: none
+  authDetail: ''
+  capturedAt: 2026-07-22T05:23:30.501489Z
+- requestPath: Sync using ZIP file/4. Query sync task.yml
+  method: GET
+  urlPattern: '{{connectorBaseUrl}}/connectors/erp/datasets/{{networkProductInstancesTenantId}}/sync-tasks/{{connectorSyncTaskId}}?include=Details'
+  headers:
+  - key: accept
+    value: application/vnd.api+json
+  queryParams: []
+  formFields: []
+  authType: none
+  authDetail: ''
+  capturedAt: 2026-07-22T05:23:30.501492Z
+- requestPath: Sync using ZIP file/Abc.yml
+  method: GET
+  urlPattern: https://qa.network-eng.sage.com/inbox/api/v3/network_users?page=1&page_items=25&direct_users_only=false
+  headers:
+  - key: accept
+    value: text/plain
+  - key: accept-language
+    value: en-US,en;q=0.9
+  - key: app-code
+    value: sage_network
+  - key: applicationname
+    value: Sage Connect UI
+  - key: authorization
+    value: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InpRTEFFQjdGRkFIcmlRNFFoMTJRSyJ9.eyJodHRwczovL3NhZ2UuY29tL3NjaS9pZHAiOiJDbG91ZElEIiwiaXNzIjoiaHR0cHM6Ly9pZC1zaGFkb3cuc2FnZS5jb20vIiwic3ViIjoiYXV0aDB8YjEwNjRlYzFhNDg3YzcyOWI3YTk5OTc1MjZmZjdlM2ZlY2I4OGRmNmYxM2VkYmU2IiwiYXVkIjpbInNuZXQtZGV2L25ldHdvcmsvYXBpIiwiaHR0cHM6Ly9zYWdlLWNpZC1zaGFkb3cuc2FnZWlkbm9ucHJvZC5hdXRoMGFwcC5jb20vdXNlcmluZm8iXSwiaWF0IjoxNzcwMjEzNDE3LCJleHAiOjE3NzAyNDIyMTcsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJhenAiOiJmN1Jua084VmFIWmFwcWJqRjVOaWRjSTg4MGM5SXZ1QyJ9.ToHEhXDEY9T0yybhSjDuQOMtKUitb1t9IOuSWeEWVzqwi_aMhaqgMm_NdWej_FKTHg9YW1mz8zL_ZwvM2399WTVnfDjWilqTOSTPedJg4c4aBZXTlo0ycJJ4rknfVP7Zs03fF__3UpV1_UUZUxyGZ_aGY4zH1TruCrF845_y1Wb85xh2nO-IgEvnpCAdS5rLn4Cg33wS0GvonXEFTgJF220hcYjEXS0aPtI5Tdw8J1jUh9-hnP-vBcQzd8NcDNwui8L9RPVuXZ7EcE1rW74kFRyH-_FJHDBbb51I7viOPW3NRPRS3F9LlC4XQjDjfb_J_U6Sgnzw5zehYK6rlFhYmw
+  - key: cache-control
+    value: no-cache
+  - key: Cookie
+    value: _cfuvid=.sKd9oYKym7xklH0Y_EDzuqh4FJFOkDh9ddsZy_T340-1770212922398-0.0.1.1-604800000; utag_main=v_id:019c28eab1ed00131f61facea02b0507d001b075009d8$_sn:1$_se:2%3Bexp-session$_ss:0%3Bexp-session$_st:1770214795953%3Bexp-session$ses_id:1770212995572%3Bexp-session$_pn:1%3Bexp-session; _legacy_auth0.f7RnkO8VaHZapqbjF5NidcI880c9IvuC.is.authenticated=true; auth0.f7RnkO8VaHZapqbjF5NidcI880c9IvuC.is.authenticated=true; __cf_bm=BWzUf9iQLDKSo8tiL6QV3hTWEVHJIMbxLb.saXu71HA-1770213432-1.0.1.1-AXkTuSGGWGCMr19R2yieIsiuzMUxaK4f.8hIk3Li4mgaBZ.FxOGbZ_a8TKzM_L.dj1h63Fpt6nlnOqFo63WPEev4jsTyOjQF0EVCx0vgmrSgzliKt4YPcybcNbStFWad
+  - key: expires
+    value: '-1'
+  - key: group-key
+    value: 0b577e25-f1a2-0aeb-5741-2b4e4fbb7e30
+  - key: newrelic
+    value: eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjYyMjAyNDMiLCJhcCI6IjU5NDU3Mzg3NCIsImlkIjoiYWFhOGRjNWU3ZjY3YmRkMSIsInRyIjoiZjU3YWY3YzEzZmM5Y2ZlYjA3YjBhYTljMmI4YzVmZjkiLCJ0aSI6MTc3MDIxMzYwNjAwMywidGsiOiIzMDQ1NTcwIn19
+  - key: pragma
+    value: no-cache
+  - key: priority
+    value: u=1, i
+  - key: referer
+    value: https://qa.network-eng.sage.com/settings/user-settings
+  - key: sec-ch-ua
+    value: '"Not(A:Brand";v="8", "Chromium";v="144", "Microsoft Edge";v="144"'
+  - key: sec-ch-ua-mobile
+    value: ?0
+  - key: sec-ch-ua-platform
+    value: '"Windows"'
+  - key: sec-fetch-dest
+    value: empty
+  - key: sec-fetch-mode
+    value: cors
+  - key: sec-fetch-site
+    value: same-origin
+  - key: traceparent
+    value: 00-f57af7c13fc9cfeb07b0aa9c2b8c5ff9-aaa8dc5e7f67bdd1-01
+  - key: tracestate
+    value: 3045570@nr=0-1-6220243-594573874-aaa8dc5e7f67bdd1----1770213606003
+  - key: user-agent
+    value: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0
+  - key: x-group-key
+    value: 0b577e25-f1a2-0aeb-5741-2b4e4fbb7e30
+  - key: x-requested-with
+    value: XMLHttpRequest
+  - key: x-sxp-authorization
+    value: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InpRTEFFQjdGRkFIcmlRNFFoMTJRSyJ9.eyJodHRwczovL3NhZ2UuY29tL3NjaS9pZHAiOiJDbG91ZElEIiwiaXNzIjoiaHR0cHM6Ly9pZC1zaGFkb3cuc2FnZS5jb20vIiwic3ViIjoiYXV0aDB8YjEwNjRlYzFhNDg3YzcyOWI3YTk5OTc1MjZmZjdlM2ZlY2I4OGRmNmYxM2VkYmU2IiwiYXVkIjpbIlNCQ0RTL2dsb2JhbCIsImh0dHBzOi8vc2FnZS1jaWQtc2hhZG93LnNhZ2VpZG5vbnByb2QuYXV0aDBhcHAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTc3MDIxMzQyNywiZXhwIjoxNzcwMjQyMjI3LCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIGVtYWlsIHVzZXI6ZnVsbCIsImF6cCI6ImY3Um5rTzhWYUhaYXBxYmpGNU5pZGNJODgwYzlJdnVDIn0.ty4Q_LxXzvmzzdHvHXWUI2TQICGAg98L5u0XMerLMD_uqY_g3xnX7Y2KTr09E9QGB9SBV1xqbU9YB_Ak9jMFqYpRgRTZkCoNNjXPEAqZbWXTkqLKSLgxFCiMAzYvHsb_rD4q8SFfmtUAWBv3paQI7k__6ByK0fbFoBm-aPNEAhlFQ742EgdcQ3qe6B4TNiH1zECp1PHyXwzLDLWQ9V4ca5IbFbQmXMFBVER9Iq-IDPSnlRqrxNekS30jHk_weWfpLCa_aP8DfB8usLfdQ7N7C5Ed_An3Sq5PhBP6BPCvhpuLIfhYY_kX-LvAYxdW_xTpDmZ72BaEINzhmm-NnfueNA
+  queryParams: []
+  formFields: []
+  authType: none
+  authDetail: ''
+  capturedAt: 2026-07-22T05:23:30.501501Z
+- requestPath: Sync using ZIP file/Get Dataset by Id.yml
+  method: GET
+  urlPattern: https://api-int.network-eng.sage.com/datasets/:datasetId
+  headers: []
+  queryParams: []
+  formFields: []
+  authType: none
+  authDetail: ''
+  capturedAt: 2026-07-22T05:23:30.501504Z
+- requestPath: Sync using ZIP file/Get Datasets.yml
+  method: GET
+  urlPattern: https://api-qa.network-eng.sage.com/datasets
+  headers:
+  - key: Sdd
+    value: ddddddd
+  queryParams: []
+  formFields: []
+  authType: none
+  authDetail: ''
+  capturedAt: 2026-07-28T12:20:02.373713Z
+- requestPath: Test-ts.yml
+  method: GET
+  urlPattern: '{{T1}}/api/v1//user/:name'
+  headers: []
+  queryParams: []
+  bodyContent: |-
+    {
+      "id": {{$guid}},
+      "name": {{T1}}
+    }
+  formFields: []
+  authType: none
+  authDetail: ''
+  capturedAt: 2026-07-22T05:23:30.501510Z
+- requestPath: Testing/Credit allocations/credit-allocations--id.yml
+  method: GET
+  urlPattern: '{{NetworkUrl}}/datasets/{{networkProductInstancesTenantId}}/credit-allocations/:id'
+  headers: []
+  queryParams: []
+  formFields: []
+  authType: none
+  authDetail: ''
+  capturedAt: 2026-07-22T05:23:30.501514Z
+- requestPath: Testing/Credit allocations/credit-allocations.yml
+  method: GET
+  urlPattern: '{{NetworkUrl}}/datasets/{{networkProductInstancesTenantId}}/credit-allocations'
+  headers: []
+  queryParams: []
+  formFields: []
+  authType: none
+  authDetail: ''
+  capturedAt: 2026-07-22T05:23:30.501517Z
+- requestPath: Testing/Credits/credits--id.yml
+  method: GET
+  urlPattern: '{{NetworkUrl}}/datasets/{{networkProductInstancesTenantId}}/credits/:id'
+  headers: []
+  queryParams: []
+  formFields: []
+  authType: none
+  authDetail: ''
+  capturedAt: 2026-07-22T05:23:30.501521Z
+- requestPath: Testing/Credits/credits.yml
+  method: GET
+  urlPattern: '{{NetworkUrl}}/datasets/{{networkProductInstancesTenantId}}/credits'
+  headers: []
+  queryParams: []
+  formFields: []
+  authType: none
+  authDetail: ''
+  capturedAt: 2026-07-22T05:23:30.501524Z
+- requestPath: Testing/Invoice lines/invoices--id-lines--lineId.yml
+  method: GET
+  urlPattern: '{{NetworkUrl}}/datasets/{{networkProductInstancesTenantId}}/invoices/:id/lines/:lineId'
+  headers: []
+  queryParams: []
+  formFields: []
+  authType: none
+  authDetail: ''
+  capturedAt: 2026-07-22T05:23:30.501528Z
+- requestPath: Testing/Invoice lines/invoices--id-lines.yml
+  method: GET
+  urlPattern: '{{NetworkUrl}}/datasets/{{networkProductInstancesTenantId}}/invoices/:id/lines'
+  headers: []
+  queryParams: []
+  formFields: []
+  authType: none
+  authDetail: ''
+  capturedAt: 2026-07-22T05:23:30.501532Z
+- requestPath: Testing/Invoices/invoices--id.yml
+  method: GET
+  urlPattern: '{{NetworkUrl}}/datasets/{{networkProductInstancesTenantId}}/invoices/:id'
+  headers: []
+  queryParams: []
+  formFields: []
+  authType: none
+  authDetail: ''
+  capturedAt: 2026-07-22T05:23:30.501536Z
+- requestPath: Testing/Invoices/invoices.yml
+  method: GET
+  urlPattern: '{{NetworkUrl}}/datasets/{{networkProductInstancesTenantId}}/invoices'
+  headers: []
+  queryParams: []
+  formFields: []
+  authType: none
+  authDetail: ''
+  capturedAt: 2026-07-22T05:23:30.501539Z
+- requestPath: Testing/Payment allocations/payment-allocations--id.yml
+  method: GET
+  urlPattern: '{{NetworkUrl}}/datasets/{{networkProductInstancesTenantId}}/payment-allocations'
+  headers: []
+  queryParams: []
+  formFields: []
+  authType: none
+  authDetail: ''
+  capturedAt: 2026-07-22T05:23:30.501543Z
+- requestPath: Testing/Payment allocations/payment-allocations.yml
+  method: GET
+  urlPattern: '{{NetworkUrl}}/datasets/{{networkProductInstancesTenantId}}/payment-allocations'
+  headers: []
+  queryParams: []
+  formFields: []
+  authType: none
+  authDetail: ''
+  capturedAt: 2026-07-22T05:23:30.501547Z
+- requestPath: Testing/Payments/payments--id.yml
+  method: GET
+  urlPattern: '{{NetworkUrl}}/datasets/{{networkProductInstancesTenantId}}/payments/:id'
+  headers: []
+  queryParams: []
+  formFields: []
+  authType: none
+  authDetail: ''
+  capturedAt: 2026-07-22T05:23:30.501552Z
+- requestPath: Testing/Payments/payments.yml
+  method: GET
+  urlPattern: '{{NetworkUrl}}/datasets/{{networkProductInstancesTenantId}}/payments'
+  headers: []
+  queryParams: []
+  formFields: []
+  authType: none
+  authDetail: ''
+  capturedAt: 2026-07-22T05:23:30.501557Z
+- requestPath: Validation/VALIDATION Auth m2m.yml
+  method: POST
+  urlPattern: '{{sageIdURL}}/oauth/token'
+  headers: []
+  queryParams: []
+  formFields: []
+  authType: none
+  authDetail: ''
+  capturedAt: 2026-07-22T05:23:30.501561Z
+- requestPath: Validation/VALIDATION GET Users (NAS).yml
+  method: GET
+  urlPattern: '{{nasUrl}}/users/{{provisionAccountResponseUserId}}'
+  headers:
+  - key: Authorization
+    value: Bearer {{m2mjwt}}
+  queryParams: []
+  formFields: []
+  authType: none
+  authDetail: ''
+  capturedAt: 2026-07-22T05:23:30.501566Z
+- requestPath: Validation/VALIDATION GET account (NAS).yml
+  method: GET
+  urlPattern: '{{nasUrl}}/accounts/{{provisionAccountResponseAccountId}}'
+  headers:
+  - key: Authorization
+    value: Bearer {{m2mjwt}}
+  queryParams: []
+  formFields: []
+  authType: none
+  authDetail: ''
+  capturedAt: 2026-07-22T05:23:30.501571Z
+- requestPath: Validation/VALIDATION GET dataset (NAS).yml
+  method: GET
+  urlPattern: '{{nasUrl}}/datasets/{{networkProductInstancesTenantId}}'
+  headers:
+  - key: Authorization
+    value: Bearer {{m2mjwt}}
+  queryParams: []
+  formFields: []
+  authType: none
+  authDetail: ''
+  capturedAt: 2026-07-22T05:23:30.501577Z
+- requestPath: Validation/VALIDATION accounts  (Organisation service).yml
+  method: GET
+  urlPattern: '{{organisationServiceURL}}/accounts/{{provisionAccountResponseAccountId}}'
+  headers:
+  - key: Authorization
+    value: Bearer {{Jwt}}
+  queryParams: []
+  formFields: []
+  authType: none
+  authDetail: ''
+  capturedAt: 2026-07-22T05:23:30.501582Z
+- requestPath: Validation/VALIDATION businesses (Organisation service).yml
+  method: GET
+  urlPattern: '{{organisationServiceURL}}/businesses/{{provisionAccountResponseBusinessId}}'
+  headers: []
+  queryParams: []
+  formFields: []
+  authType: none
+  authDetail: ''
+  capturedAt: 2026-07-22T05:23:30.501588Z
+- requestPath: Validation/VALIDATION product instances  (Organisation service).yml
+  method: GET
+  urlPattern: '{{organisationServiceURL}}/accounts/{{provisionAccountResponseAccountId}}/product-instances'
+  headers:
+  - key: Authorization
+    value: Bearer {{Jwt}}
+  queryParams: []
+  formFields: []
+  authType: none
+  authDetail: ''
+  capturedAt: 2026-07-22T05:23:30.501597Z
+- requestPath: Validation/VALIDATION userMangement Manual Step in browser.yml
+  method: OPTIONS
+  urlPattern: https://app.sandbox.sbc.sage.com/settings/user-management/users?tid={{networkProductInstancesTenantId}}
+  headers: []
+  queryParams: []
+  bodyContent: '{"BusinessId":"{{provisionAccountResponseBusinessId}}","RoleIds":["db5ff0b3-0dc9-4888-814d-a45899a62249"],"OwnerHint":"{{provisionAccountEmail}}"}'
+  formFields: []
+  authType: none
+  authDetail: ''
+  capturedAt: 2026-07-22T05:23:30.501605Z
+- requestPath: appcall.yml
+  method: GET
+  urlPattern: https://localhost:8080/api/v1/data?Sdd=sddd
+  headers: []
+  queryParams: []
+  formFields: []
+  authType: none
+  authDetail: ''
+  capturedAt: 2026-07-28T16:49:41.848568Z
+- requestPath: onboard.yml
+  method: POST
+  urlPattern: https://int.network-eng.sage.com/inbox/api/v3/onboard
+  headers:
+  - key: accept
+    value: text/plain
+  - key: accept-language
+    value: en-US,en;q=0.9
+  - key: app-code
+    value: sage_network
+  - key: applicationname
+    value: Sage Connect UI
+  - key: authorization
+    value: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InpRTEFFQjdGRkFIcmlRNFFoMTJRSyJ9.eyJodHRwczovL3NhZ2UuY29tL3NjaS9pZHAiOiJDbG91ZElEIiwiaXNzIjoiaHR0cHM6Ly9pZC1zaGFkb3cuc2FnZS5jb20vIiwic3ViIjoiYXV0aDB8MjMxNGUxNDE4NTQ3NTE5OGI2OWMxYzJjMjdmOGRmNGY3MTk0YzMwYjZkODE2MWNkIiwiYXVkIjpbInNuZXQtZGV2L25ldHdvcmsvYXBpIiwiaHR0cHM6Ly9zYWdlLWNpZC1zaGFkb3cuc2FnZWlkbm9ucHJvZC5hdXRoMGFwcC5jb20vdXNlcmluZm8iXSwiaWF0IjoxNzcyMTg0MDQ3LCJleHAiOjE3NzIyMTI4NDcsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJhenAiOiJTUUR5aWlDSXJPemQyZ2c2SkRueXVVN2FrSjhBU002TCJ9.Nm45Zxrd6qqB2jDkruGuPtksOLsm-Vr1-wJC19KyT6hgP2hoXiYVKtPQT5-wBfolWcYI6QK3x6g6kCBIw3s3qDxiXcTO-GR75ChYpsaURzBm-o7cVrnjbIHySXliIym8GQ0KxGmr1srbSG4T4xeeLVtyut2YyanRqAU2qHhIPXjirz7-x_-U3CNTd10BgFCI-NjOLYJh1_G5ok7lsumVO7rDNHkvaD8hZ7wbHIZahH1qgIXPWbWuRIk4KP_awMnYXJi00Yz93DFkVNEzcjTCpT3OOsuxxQq_rDzbUtb355C7ziBhE9LEtS81NNHR5Ga8fCaAJiV0bWGeuzRrG0TDbQ
+  - key: cache-control
+    value: no-cache
+  - key: content-type
+    value: application/json
+  - key: Cookie
+    value: _cfuvid=s_saRa3hVn_nsKsZ2IWz8v3vF6wEJ1peLQOgPPKLGGA-1771922001730-0.0.1.1-604800000; _ga=GA1.2.318958323.1737016726; _hjSessionUser_2594103=eyJpZCI6ImQ5NzQwMTFlLTI2ZjUtNTY5MS05YTJhLTRkNDNlZWY5ZDlmYyIsImNyZWF0ZWQiOjE3NzE5MjYyOTY2NzksImV4aXN0aW5nIjp0cnVlfQ==; _ga_LSV9NWWG90=GS2.1.s1771978824$o2$g0$t1771978824$j60$l0$h0; utag_main=v_id:019c31fc2a2a0000423defb609d305075001b06d00942$_sn:5$_se:2%3Bexp-session$_ss:0%3Bexp-session$_st:1772091275403%3Bexp-session$ses_id:1772089474928%3Bexp-session$_pn:1%3Bexp-session; _legacy_auth0.SQDyiiCIrOzd2gg6JDnyuU7akJ8ASM6L.is.authenticated=true; auth0.SQDyiiCIrOzd2gg6JDnyuU7akJ8ASM6L.is.authenticated=true; cf_clearance=Y3YT4mHbcwKIgq0j0L5UjVu6Iloq1F3CRWAQEoanDrc-1772171813-1.2.1.1-jirZFRJpj2WQTPVi1i07lLKvw83xE0dOBGLlZHhiluEw7G.nHHS_bFHRVpSgOPIK2tx9oHQIt6eFRD8j.pwpq_mRY.w_yypybIwh5_eCybEFCTh3fkynDM_96wDb2bbfIsCdgsJtXi_H1_.TfYJZp08HFGn3DaoQH.D0Dj_vouwsypocLtEEyqOV7qJ1Pi4vDXdkMsQjbQxJDuYWlLBtWqPZReUWJUD6jB9q.JxsgyQ; __cf_bm=frlv1ajhHj5lG5XfZJT30hqcw4u3yk2hoR8Unsl4h74-1772182773-1.0.1.1-K9_E1NRkwo7ZTtJ4lLqEaRBnRA31LJrKRyZerQmT2cBq4uvxZTpPe9s.KG6jTNNUne6epnBXK.8mGsygsBbJlC7vssniSBv0eTodzGMf27k; __cf_bm=5MPwS8hZROIWcKxSzVk102Kvv7.pJ5srekaqEoeD2hU-1772184090-1.0.1.1-7Ydtnwe8391bpmgE.4QvX2dHyWPs7lSI4hCg8GSyarDlTnXOTRi9kgV2Gf2DKOuTC1wL_MsF5Iv7Uj4T.hsj4kqkqoU9a0.lEhgrerVZMfk; _cfuvid=DWFPAP6CDXmNJbCGH5DiHCUlZDwI2WWfXHTa4N9McaM-1772184090806-0.0.1.1-604800000
+  - key: dnt
+    value: '1'
+  - key: expires
+    value: '-1'
+  - key: group-key
+    value: 25a77b24-0092-6be0-92e6-34d0aae4e471
+  - key: newrelic
+    value: eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjYyMjAyNDMiLCJhcCI6IjU5NDU3Mzg2OCIsImlkIjoiZGE3NGU0ZGY5MDQwYjNhMSIsInRyIjoiNmE2MjdiYjQyYjBiY2I3OWRjODMxZWVjNDdiYjI5NTgiLCJ0aSI6MTc3MjE4NDA5MDgzNSwidGsiOiIzMDQ1NTcwIn19
+  - key: origin
+    value: https://int.network-eng.sage.com
+  - key: pragma
+    value: no-cache
+  - key: priority
+    value: u=1, i
+  - key: referer
+    value: https://int.network-eng.sage.com/app/home
+  - key: sec-ch-ua
+    value: '"Not:A-Brand";v="99", "Google Chrome";v="145", "Chromium";v="145"'
+  - key: sec-ch-ua-mobile
+    value: ?0
+  - key: sec-ch-ua-platform
+    value: '"macOS"'
+  - key: sec-fetch-dest
+    value: empty
+  - key: sec-fetch-mode
+    value: cors
+  - key: sec-fetch-site
+    value: same-origin
+  - key: traceparent
+    value: 00-6a627bb42b0bcb79dc831eec47bb2958-da74e4df9040b3a1-01
+  - key: tracestate
+    value: 3045570@nr=0-1-6220243-594573868-da74e4df9040b3a1----1772184090835
+  - key: user-agent
+    value: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+  - key: x-group-key
+    value: 25a77b24-0092-6be0-92e6-34d0aae4e471
+  - key: x-requested-with
+    value: XMLHttpRequest
+  queryParams: []
+  bodyContent: '{}'
+  formFields: []
+  authType: none
+  authDetail: ''
+  capturedAt: 2026-07-22T05:23:30.501622Z

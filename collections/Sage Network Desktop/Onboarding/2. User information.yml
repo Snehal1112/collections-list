@@ -1,0 +1,16 @@
+uid: 1456e1cb-e23f-4ba5-873e-676bcfc31f8d
+info:
+  name: 2. User information
+  type: http
+http:
+  method: GET
+  url: '{{sageIdURL}}/userinfo/sddd'
+  headers:
+  - name: Sdddd
+    value: dddd
+settings:
+  encodeUrl: true
+  timeout: 0.0
+  followRedirects: true
+  maxRedirects: 5.0
+  verifySsl: true

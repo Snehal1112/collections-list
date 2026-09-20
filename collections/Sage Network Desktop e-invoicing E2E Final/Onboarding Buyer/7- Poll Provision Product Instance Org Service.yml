@@ -1,0 +1,111 @@
+uid: 570548e9-06e1-4a80-ae45-fa34f06cad84
+info:
+  name: 7- Poll Provision Product Instance Org Service
+  type: http
+  seq: 6
+http:
+  method: POST
+  url: '{{OrgServiceURL}}/v3/provision/account?PendingProductInstances=false'
+  headers:
+  - name: X-Idempotency-Key
+    value: '{{provisionAccountIdempotency6}}'
+  - name: Authorization
+    value: Bearer {{jwtCloudId}}
+  body:
+    type: json
+    data: "{\n    \"Account\": {\n        \"Id\": \"{{accountIdBuyer}}\"\n    },\n    \"Business\": {\n        \"Name\": \"{{CompanyNameBuyer}}\",\n        \"CountryCode\": \"FR\",\n        \"ExternalId\": \"{{provisionAccountExternalIdBuyer}}\",\n        \"ExternalSource\": \"Sage Desktop\",\n        \"RegisteredLocation\": \"FR\",\n        \"RegisteredCountry\": \"FR\",\n        \"BusinessAddress\": {\n        \"Type\": \"main\",\n        \"Line1\": \"Sage\",\n        \"Country\": \"FR\"\n          }\n      },\n      \"Licence\": {\n          \"Application\": \"sage.integrate.myproduct\",\n          \"Version\": \"0\",\n          \"Provider\": \"integrate.my.provider\",\n          \"LicenceData\": \"{\\\"serial\\\":\\\"ACTIVE\\\"}\"\n         },\n    \"ProductSubscription\": {\n        \"SubscriptionId\": \"{{ProductSubscriptionIdBuyer}}\",\n        \"Origin\": \"product\",\n        \"BackOfficeId\": \"13922345\",\n        \"BackOfficeSource\": \"InTouch\",     \n        \"ProductLicenses\": \n            [ {\n                \"Product\": \"sage100FR\",\n                \"ProductCode\": \"sage100FR\",\n                \"ProductLicenseType\": \"sage100FR_premium\",\n                \"Expires\": \"2030-03-12 10:38:14Z\"\n              },\n              { \"Product\": \"network\",\n                 \"ProductCode\": \"network\",\n                \"ProductLicenseType\": \"network-standard\",\n                \"Expires\": \"2030-01-01T00:00:00+00:00\"\n              } ]\n          }\n}"
+runtime:
+  scripts:
+  - type: after-response
+    code: |-
+      const status = res.getStatus();
+      const data = res.getBody();
+
+      if (status === 202) {
+        console.log("Still provisioning… will retry automatically");
+      }
+
+      else if (status === 201) {
+        // Save basic IDs
+        bru.setVar("provisionAccountResponseAccountId", data.AccountId);
+        bru.setVar("provisionAccountResponseUserId",    data.UserId);
+        bru.setVar("provisionAccountResponseBusinessId",data.BusinessId);
+
+        // Look for productCode = 'network'
+        const net = (data.ProductInstances || []).find(p => p.ProductCode === 'network');
+        if (!net) {
+          throw new Error("No network product!");
+        }
+
+        const tenantId = net.TenantId;
+
+        bru.setVar("networkProductInstancesId",         net.Id);
+        bru.setVar("networkProductInstancesTenantIdBuyer",   tenantId);
+        bru.setVar("networkProductInstancesProductCode",net.ProductCode);
+        bru.setVar("TenantIdbuyer", tenantId);
+
+        // Also save first ProductInstance if exists
+        if (data.ProductInstances && data.ProductInstances.length > 0) {
+          bru.setVar("ProductInstanceId", data.ProductInstances[0].Id);
+          bru.setVar("TenantIdBuyer",          data.ProductInstances[0].TenantId);
+          bru.setVar("DatasetIdBuyer",         data.ProductInstances[0].TenantId);
+          bru.setVar("networkProductInstancesTenantIdBuyer",         data.ProductInstances[0].TenantId);
+        }
+
+        // Build context hint
+        const email = bru.getVar("provisionAccountEmailBuyer");
+        console.log("email", email);
+
+        const hint = JSON.stringify({
+          TenantId: tenantId,
+          RoleIds: ["erp"],
+          OwnerEmailHint: email
+        });
+
+        console.log("hint", hint);
+
+        const encodedHint = stringToBase32(hint);
+        bru.setVar("contextHintEncodedBuyer", encodedHint);
+
+        console.log("contextHintEncodedBuyer", encodedHint);
+      }
+
+      // If BusinessId exists at root level, store it
+      if (!data.errors && data.BusinessId) {
+        bru.setVar("BusinessIdBuyer", data.BusinessId);
+      }
+
+      // ===== Helpers =====
+      function stringToBase32(str) {
+        const base32chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ234567";
+        let binString = "";
+        let pad = 0;
+
+        for (let i = 0; i < str.length; i++) {
+          const bits = str.charCodeAt(i).toString(2);
+          binString += leftpad(bits, 8, "0");
+        }
+
+        let base32String = "";
+        for (let j = 0; j < binString.length; j += 5) {
+          let chunk = binString.substr(j, 5);
+          if (chunk.length < 5) {
+            pad = 5 - chunk.length;
+            chunk += "0".repeat(pad);
+          }
+          const index = parseInt(chunk, 2);
+          base32String += base32chars[index];
+        }
+
+        if (pad > 0) {
+          base32String += "=".repeat(pad);
+        }
+
+        return base32String;
+      }
+
+      function leftpad(str, len, pad) {
+        return str.length >= len
+          ? str
+          : new Array(len + 1 - str.length).join(pad) + str;
+      }

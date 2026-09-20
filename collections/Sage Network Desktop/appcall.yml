@@ -1,0 +1,18 @@
+uid: 3b74523d-6bd9-4d6b-9b3b-c306eae2b05a
+info:
+  name: appcall
+  type: http
+http:
+  method: GET
+  url: https://localhost:8080/api/v1/data?Sdd=sddd
+runtime:
+  assertions:
+  - expression: res.status
+    operator: eq
+    value: '200'
+settings:
+  encodeUrl: true
+  timeout: 0.0
+  followRedirects: true
+  maxRedirects: 5.0
+  verifySsl: true

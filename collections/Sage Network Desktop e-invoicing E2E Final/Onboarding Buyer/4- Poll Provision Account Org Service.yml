@@ -1,0 +1,42 @@
+uid: 38a15975-e4d9-410f-90e1-8d90fbfada6b
+info:
+  name: 4- Poll Provision Account Org Service
+  type: http
+  seq: 3
+http:
+  method: POST
+  url: '{{OrgServiceURL}}/v3/provision/account?PendingProductInstances=false'
+  headers:
+  - name: X-Idempotency-Key
+    value: '{{provisionAccountIdempotency4}}'
+  - name: Authorization
+    value: Bearer {{jwtCloudId}}
+  body:
+    type: json
+    data: |-
+      {
+          "User": {
+              "Email": "{{provisionAccountEmailBuyer}}",
+              "Locale": "fr-FR",
+              "UserAuths": [{
+                  "PrincipalId":"{{LoggedInUserAuth0PrincipalIdbuyer}}",
+                  "ProviderId":"{{LoggedInUserAuth0PrincipalIdbuyer}}",
+                  "ProviderType":"CloudID"
+              }]
+          },
+          "Account": {
+              "ExternalId": "{{provisionAccountExternalId}}",
+              "ExternalSource": "Postman Provisioner"
+          }
+      }
+runtime:
+  scripts:
+  - type: after-response
+    code: |-
+      const jsonData = res.getBody();
+
+      if (!jsonData.errors) {
+        // Save variables to use later in this collection run
+        bru.setVar("accountIdBuyer", jsonData.AccountId);
+        bru.setVar("UserIdBuyer", jsonData.UserId);
+      }

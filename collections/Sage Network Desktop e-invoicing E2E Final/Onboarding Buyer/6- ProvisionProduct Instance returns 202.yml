@@ -1,0 +1,25 @@
+uid: 48ba91f7-02ab-4fe7-8450-5838c96f5242
+info:
+  name: 6- ProvisionProduct Instance returns 202
+  type: http
+  seq: 5
+http:
+  method: POST
+  url: '{{OrgServiceURL}}/v3/provision/account?PendingProductInstances=false'
+  headers:
+  - name: X-Idempotency-Key
+    value: '{{provisionAccountIdempotency6}}'
+  - name: Authorization
+    value: Bearer {{jwtCloudId}}
+  body:
+    type: json
+    data: "{\n    \"Account\": {\n        \"Id\": \"{{accountIdBuyer}}\"\n    },\n    \"Business\": {\n        \"Name\": \"{{CompanyNameBuyer}}\",\n        \"CountryCode\": \"FR\",\n        \"ExternalId\": \"{{provisionAccountExternalIdBuyer}}\",\n        \"ExternalSource\": \"Sage Desktop\",\n        \"RegisteredLocation\": \"FR\",\n        \"RegisteredCountry\": \"FR\",\n        \"BusinessAddress\": {\n        \"Type\": \"main\",\n        \"Line1\": \"Sage\",\n        \"Country\": \"FR\"\n          }\n      },\n      \"Licence\": {\n          \"Application\": \"sage.integrate.myproduct\",\n          \"Version\": \"0\",\n          \"Provider\": \"integrate.my.provider\",\n          \"LicenceData\": \"{\\\"serial\\\":\\\"ACTIVE\\\"}\"\n         },\n    \"ProductSubscription\": {\n        \"SubscriptionId\": \"{{ProductSubscriptionIdBuyer}}\",\n        \"Origin\": \"product\",\n        \"BackOfficeId\": \"13922345\",\n        \"BackOfficeSource\": \"InTouch\",     \n        \"ProductLicenses\": \n            [ {\n                \"Product\": \"sage100FR\",\n                \"ProductCode\": \"sage100FR\",\n                \"ProductLicenseType\": \"sage100FR_premium\",\n                \"Expires\": \"2030-03-12 10:38:14Z\"\n              },\n              { \"Product\": \"network\",\n                 \"ProductCode\": \"network\",\n                \"ProductLicenseType\": \"network-standard\",\n                \"Expires\": \"2030-01-01T00:00:00+00:00\"\n              } ]\n          }\n}"
+runtime:
+  scripts:
+  - type: before-request
+    code: "// Generate random UUID for header X-Idempotency-Key\nvar uuid = require('uuid'); var randomUUID = uuid.v4();\nbru.setEnvVar(\"provisionAccountIdempotency6\", randomUUID);\n \n// Generate random UUID for body BackOfficeId\nvar uuid = require('uuid'); var randomUUID = uuid.v4()\nbru.setEnvVar(\"provisionAccountBackOfficeId\", randomUUID);\n \n// Generate random UUID for body ExternalId\nvar uuid = require('uuid'); var randomUUID = uuid.v4();\nbru.setEnvVar(\"provisionAccountExternalIdBuyer\", randomUUID);\n \n// account name\nbru.setEnvVar(\"provisionAccountName\", bru.interpolate('{{$randomCompanyName}}'));\n \n// create ManagingAccountId without Lodash\nfunction randomString(minValue, maxValue, dataSet = 'abcdefghijklmnopqrstuvwxyz0123456789') {\n  // if no minValue passed, default both to 50\n  if (typeof minValue !== 'number') {\n    minValue = 50;\n    maxValue = 50;\n  }\n  // if only minValue is a number, make maxValue = minValue\n  else if (typeof maxValue !== 'number') {\n    maxValue = minValue;\n  }\n \n  // pick a random integer between minValue and maxValue (inclusive)\n  const length = Math.floor(Math.random() * (maxValue - minValue + 1)) + minValue;\n \n  // build the random string\n  let result = '';\n  for (let i = 0; i < length; i++) {\n    result += dataSet.charAt(Math.floor(Math.random() * dataSet.length));\n  }\n  return result;\n}\n \n// set it in Bruno’s environment so you can use {{provisionAccountManagingAccountId}}\nbru.setEnvVar(\n  'provisionAccountManagingAccountId',\n  randomString()  // defaults to 50 chars if you don’t pass args\n);\n \n// create SubscriptionId without Lodash\nfunction randomString(minValue, maxValue, dataSet = 'abcdefghijklmnopqrstuvwxyz0123456789') {\n  // default to length 50 if nothing passed\n  if (typeof minValue !== 'number') {\n    minValue = 50;\n    maxValue = 50;\n  }\n  // if only min passed, make max = min\n  else if (typeof maxValue !== 'number') {\n    maxValue = minValue;\n  }\n \n  // pick a random integer between minValue and maxValue (inclusive)\n  const length = Math.floor(Math.random() * (maxValue - minValue + 1)) + minValue;\n \n  // build the string\n  let result = '';\n  for (let i = 0; i < length; i++) {\n    result += dataSet.charAt(Math.floor(Math.random() * dataSet.length));\n  }\n  return result;\n}\n \n// set it into Bruno’s environment\nbru.setEnvVar(\n  'provisionAccountSubscriptionId',\n  randomString()  // will default to 50 chars if you don’t pass args\n);\n// Generate a UUID-like idempotency key\nfunction uuidLike() {\n  function s4() {\n    return Math.floor((1 + Math.random()) * 0x10000).toString(16).substring(1);\n  }\n  return `${s4()}${s4()}-${s4()}-${s4()}-${s4()}-${s4()}${s4()}${s4()}`;\n}\n\nbru.setVar(\"idempotencyKey3\", uuidLike());\n\n// Random company name (Bruno doesn’t have {{$randomCompanyName}} like Postman)\n// Example: \"TestCompany-\" + random number\nconst randomCompanyName = \"TestCompany-\" + Math.floor(Math.random() * 10000);\nbru.setVar(\"CompanyNameBuyer\", randomCompanyName);"
+  - type: after-response
+    code: |-
+      test("OK", function () {
+          expect(res.getStatus()).to.equal(202);
+      });

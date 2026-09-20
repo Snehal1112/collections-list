@@ -1,0 +1,11 @@
+uid: 2578a296-78bf-48ce-a8ab-8306d9ffc4b3
+info:
+  name: Companies
+  type: http
+  seq: 1
+http:
+  method: GET
+  url: '{{ADSapi}}/Companies/query'
+  headers:
+  - name: X-Group-Key
+    value: '{{networkProductInstancesTenantIdBuyer}}'

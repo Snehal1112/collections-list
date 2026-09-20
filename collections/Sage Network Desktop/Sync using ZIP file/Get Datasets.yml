@@ -1,0 +1,41 @@
+uid: 5bc5372b-1c2f-4b8d-a812-1b79b1af5acf
+info:
+  name: Get Datasets
+  type: http
+  tags:
+  - dev
+http:
+  method: GET
+  url: https://api-qa.network-eng.sage.com/datasets
+  headers:
+  - name: Sdd
+    value: ddddddd
+runtime:
+  scripts:
+  - type: after-response
+    code: |-
+      console.log("response status:-", res.getStatus())
+      console.log("response Body:-", res.getBody())
+  - type: tests
+    code: |-
+      rok.test("Status is 200", () => {
+        rok.expect(res.getStatus()).toBe(200)
+
+
+
+      });
+  assertions:
+  - expression: res.status
+    operator: eq
+    value: '200'
+    disabled: false
+  - expression: res.body
+    operator: eq
+    value: '{"meta":{"totalPages":1},"data":[{"type":"Dataset","id":"3b6c3d87-6552-7993-4fa1-df012556ff87","attributes":{"name":"Cormier Inc","country":"FR"},"mappings":{"sxp":{"businessId":"9f240b42-03a4-4dae-85a2-7caa6065639e"}},"relationship":{"account":{"links":{"related":"/accounts/a711444a-106e-4439-a062-a5eebf2f51c1"},"data":{"type":"Account","id":"a711444a-106e-4439-a062-a5eebf2f51c1"}}},"meta":{}},{"type":"Dataset","id":"0dde42c4-934e-c4b4-ab18-4b2d2f09886b","attributes":{"name":"Sage50cloudUS","country":"US"},"mappings":{"sxp":{"businessId":"8df95aef-7500-4c62-ae06-b1cc71272cfb"}},"relationship":{"account":{"links":{"related":"/accounts/0f45e13d-9ffc-4fea-86f0-2d0f732e1b2e"},"data":{"type":"Account","id":"0f45e13d-9ffc-4fea-86f0-2d0f732e1b2e"}}},"meta":{}},{"type":"Dataset","id":"7352e10f-12c6-0c8c-3059-5d6b87d1db6a","attributes":{"name":"sage50cloudUKI","country":"GB"},"mappings":{"sxp":{"businessId":"d38398bf-58e2-4e60-9a13-08a22ccb8c14"}},"relationship":{"account":{"links":{"related":"/accounts/0f45e13d-9ffc-4fea-86f0-2d0f732e1b2e"},"data":{"type":"Account","id":"0f45e13d-9ffc-4fea-86f0-2d0f732e1b2e"}}},"meta":{}},{"type":"Dataset","id":"9bf2833d-1095-3558-48b0-42ae12f3b9f8","attributes":{"name":"sage100US","country":"US"},"mappings":{"sxp":{"businessId":"b6e9731a-4b91-415b-909e-73e73030520d"}},"relationship":{"account":{"links":{"related":"/accounts/0f45e13d-9ffc-4fea-86f0-2d0f732e1b2e"},"data":{"type":"Account","id":"0f45e13d-9ffc-4fea-86f0-2d0f732e1b2e"}}},"meta":{}},{"type":"Dataset","id":"779340f5-e51a-bdd6-94d1-2ea1ba3a8ea7","attributes":{"name":"sage50CA","country":"CA"},"mappings":{"sxp":{"businessId":"6a074c15-65e0-4619-840c-0c738d98fc06"}},"relationship":{"account":{"links":{"related":"/accounts/0f45e13d-9ffc-4fea-86f0-2d0f732e1b2e"},"data":{"type":"Account","id":"0f45e13d-9ffc-4fea-86f0-2d0f732e1b2e"}}},"meta":{}},{"type":"Dataset","id":"4972a7af-86b7-5f75-ac37-67f47b756931","attributes":{"name":"sageFRP1000FR","country":"FR"},"mappings":{"sxp":{"businessId":"6d0286c3-59dd-4c9b-8912-a25a4d490d50"}},"relationship":{"account":{"links":{"related":"/accounts/0f45e13d-9ffc-4fea-86f0-2d0f732e1b2e"},"data":{"type":"Account","id":"0f45e13d-9ffc-4fea-86f0-2d0f732e1b2e"}}},"meta":{}},{"type":"Dataset","id":"5bf5c5d5-8e24-ed81-a8aa-10561853ce0c","attributes":{"name":"sage50US","country":"US"},"mappings":{"sxp":{"businessId":"cc6e24e3-baa2-4443-b193-55f822034554"}},"relationship":{"account":{"links":{"related":"/accounts/0f45e13d-9ffc-4fea-86f0-2d0f732e1b2e"},"data":{"type":"Account","id":"0f45e13d-9ffc-4fea-86f0-2d0f732e1b2e"}}},"meta":{}},{"type":"Dataset","id":"e2abc5d7-6b98-0a2c-fa95-e0ae80a9ee1f","attributes":{"name":"sage100FR","country":"FR"},"mappings":{"sxp":{"businessId":"cfcba0e8-1dfe-4149-b487-505d63ad2470"}},"relationship":{"account":{"links":{"related":"/accounts/0f45e13d-9ffc-4fea-86f0-2d0f732e1b2e"},"data":{"type":"Account","id":"0f45e13d-9ffc-4fea-86f0-2d0f732e1b2e"}}},"meta":{}},{"type":"Dataset","id":"8bd0f433-faca-a1ce-d04d-b80c0c73d44e","attributes":{"name":"Rate Limiting 1 - sage100DE","country":"DE"},"mappings":{"sxp":{"businessId":"2f762678-4184-45b7-8244-7c873abc425d"}},"relationship":{"account":{"links":{"related":"/accounts/0f45e13d-9ffc-4fea-86f0-2d0f732e1b2e"},"data":{"type":"Account","id":"0f45e13d-9ffc-4fea-86f0-2d0f732e1b2e"}}},"meta":{}},{"type":"Dataset","id":"1d017649-8c07-0694-0ca2-6b93fe534377","attributes":{"name":"sage50FR","country":"FR"},"mappings":{"sxp":{"businessId":"8cb8666c-d827-48d6-ade6-a6b207f651f3"}},"relationship":{"account":{"links":{"related":"/accounts/0f45e13d-9ffc-4fea-86f0-2d0f732e1b2e"},"data":{"type":"Account","id":"0f45e13d-9ffc-4fea-86f0-2d0f732e1b2e"}}},"meta":{}},{"type":"Dataset","id":"e88aa4a7-2464-ffe9-f144-e902f299d49b","attributes":{"name":"sage200ZA","country":"ZA"},"mappings":{"sxp":{"businessId":"d217e6f0-a780-4d90-88c6-a7c2203dec27"}},"relationship":{"account":{"links":{"related":"/accounts/0f45e13d-9ffc-4fea-86f0-2d0f732e1b2e"},"data":{"type":"Account","id":"0f45e13d-9ffc-4fea-86f0-2d0f732e1b2e"}}},"meta":{}},{"type":"Dataset","id":"19c10139-f278-9961-5548-a3918a2e69e2","attributes":{"name":"sage100DE","country":"DE"},"mappings":{"sxp":{"businessId":"9cb79f02-4563-4b18-b625-c9534e6adbf6"}},"relationship":{"account":{"links":{"related":"/accounts/0f45e13d-9ffc-4fea-86f0-2d0f732e1b2e"},"data":{"type":"Account","id":"0f45e13d-9ffc-4fea-86f0-2d0f732e1b2e"}}},"meta":{}},{"type":"Dataset","id":"4218f746-f8a5-ad1d-20c4-e77f8482d515","attributes":{"name":"sage50ES","country":"ES"},"mappings":{"sxp":{"businessId":"c87144f7-51df-4e8a-81b1-a5807a5769ad"}},"relationship":{"account":{"links":{"related":"/accounts/0f45e13d-9ffc-4fea-86f0-2d0f732e1b2e"},"data":{"type":"Account","id":"0f45e13d-9ffc-4fea-86f0-2d0f732e1b2e"}}},"meta":{}},{"type":"Dataset","id":"9dbf58dd-80e5-dd0e-b808-79775995d1ef","attributes":{"name":"sage200ES","country":"ES"},"mappings":{"sxp":{"businessId":"affce1bb-8270-40eb-90a5-a1da046a584f"}},"relationship":{"account":{"links":{"related":"/accounts/0f45e13d-9ffc-4fea-86f0-2d0f732e1b2e"},"data":{"type":"Account","id":"0f45e13d-9ffc-4fea-86f0-2d0f732e1b2e"}}},"meta":{}},{"type":"Dataset","id":"df02f5a9-1167-7121-cc33-ce58306fac46","attributes":{"name":"sage50DE","country":"DE"},"mappings":{"sxp":{"businessId":"9835b9f0-48d1-4f9a-90e9-4ca84ee4d1f6"}},"relationship":{"account":{"links":{"related":"/accounts/0f45e13d-9ffc-4fea-86f0-2d0f732e1b2e"},"data":{"type":"Account","id":"0f45e13d-9ffc-4fea-86f0-2d0f732e1b2e"}}},"meta":{}},{"type":"Dataset","id":"5cb96ec4-39d8-7955-6892-aacf6d691112","attributes":{"name":"sage200uki","country":"GB"},"mappings":{"sxp":{"businessId":"1bf75dfe-469c-4778-b815-d087e13fdf93"}},"relationship":{"account":{"links":{"related":"/accounts/0f45e13d-9ffc-4fea-86f0-2d0f732e1b2e"},"data":{"type":"Account","id":"0f45e13d-9ffc-4fea-86f0-2d0f732e1b2e"}}},"meta":{}},{"type":"Dataset","id":"42a53fb3-68e2-beea-30b2-17f1a9af4a88","attributes":{"name":"SageX3 - FR","country":"FR"},"mappings":{"sxp":{"businessId":"504fe7f9-d7f3-4dec-aca5-51f7cef845eb"}},"relationship":{"account":{"links":{"related":"/accounts/0f45e13d-9ffc-4fea-86f0-2d0f732e1b2e"},"data":{"type":"Account","id":"0f45e13d-9ffc-4fea-86f0-2d0f732e1b2e"}}},"meta":{}},{"type":"Dataset","id":"b7ece503-99f0-9c4c-5d4f-f8f77bfc22c4","attributes":{"name":"sageBatigestConnectFR","country":"FR"},"mappings":{"sxp":{"businessId":"2fc0a114-5447-416a-9048-a0caac644c8a"}},"relationship":{"account":{"links":{"related":"/accounts/0f45e13d-9ffc-4fea-86f0-2d0f732e1b2e"},"data":{"type":"Account","id":"0f45e13d-9ffc-4fea-86f0-2d0f732e1b2e"}}},"meta":{}}],"links":{"self":"https://qa01-api.nas-eng.sage.com/datasets?page_after=1&page_size=25"}}'
+    disabled: false
+settings:
+  encodeUrl: true
+  timeout: 30000.0
+  followRedirects: true
+  maxRedirects: 5.0
+  verifySsl: true

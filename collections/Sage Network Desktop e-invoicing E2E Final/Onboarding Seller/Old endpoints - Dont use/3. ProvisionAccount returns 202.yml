@@ -1,0 +1,25 @@
+uid: d7b24aac-d053-4564-86ca-0d94cccfe5e8
+info:
+  name: 3. ProvisionAccount returns 202
+  type: http
+  seq: 3
+http:
+  method: POST
+  url: '{{connectedBridgeURL}}/provision/account'
+  headers:
+  - name: Content-Type
+    value: application/json
+  - name: X-Idempotency-Key
+    value: '{{provisionAccountIdempotency}}'
+  body:
+    type: json
+    data: "{\n    \"User\": {\n        \"Email\": \"{{provisionAccountEmail}}\", \n        \"FirstName\": \"{{$randomFirstName}}\",\n        \"LastName\": \"{{$randomLastName}}\",\n        \"Locale\": \"fr-FR\"\n    },\n    \"Account\": {},\n    \"ProductSubscription\": {\n        \"ManagingAccountId\": \"{{provisionAccountManagingAccountId}}\",\n        \"SubscriptionId\": \"{{provisionAccountSubscriptionId}}\",\n        \"Origin\": \"{{origin}}\",\n        \"BackOfficeId\": \"{{provisionAccountBackOfficeId}}\", \n        \"BackOfficeSource\": \"{{STSProvider}}\"\n    },\n\"ProductLicences\": [{\n    \"Product\": \"{{productCode}}\",\n    \"ProductLicenseType\": \"{{productLicenseType}}\",\n    \"Expires\": \"2025-03-12 10:38:14Z\"\n    },\n {\"Product\": \"network\",\n            \"ProductLicenseType\": \"network-standard\",\n            \"Expires\": \"2030-01-01T00:00:00+00:00\"\n    }],\n    \"Licence\": {\n            \"Application\": \"{{STSApplication}}\",\n            \"Version\": \"{{STSVersion}}\",\n            \"Provider\": \"{{STSProvider}}\",\n            \"LicenceData\": \"{{STSLicenseData}}\"\n    },\n    \"Business\": {\n        \"Name\": \"{{provisionAccountName}}\",\n        \"ExternalId\": \"{{provisionAccountExternalId}}\",\n        \"ExternalSource\": \"Sage Desktop\",\n        \"RegisteredLocation\": \"FR\",\n        \"RegisteredCountry\": \"FR\",\n        \"BusinessAddress\": {\n            \"Type\": \"main\",\n            \"Line1\": \"Sage\",\n            \"Country\": \"FR\"\n        },\n        \"ProductInstance\": {\n            \"Name\": \"{{productCode}}\",\n            \"ProductCode\": \"{{productCode}}\"\n        }\n   }  \n}"
+runtime:
+  scripts:
+  - type: before-request
+    code: "// Generate random UUID for header X-Idempotency-Key\nvar uuid = require('uuid'); var randomUUID = uuid.v4();\nbru.setEnvVar(\"provisionAccountIdempotency\", randomUUID);\n \n// Generate random UUID for body BackOfficeId\nvar uuid = require('uuid'); var randomUUID = uuid.v4()\nbru.setEnvVar(\"provisionAccountBackOfficeId\", randomUUID);\n \n// Generate random UUID for body ExternalId\nvar uuid = require('uuid'); var randomUUID = uuid.v4();\nbru.setEnvVar(\"provisionAccountExternalId\", randomUUID);\n \n// account name\nbru.setEnvVar(\"provisionAccountName\", bru.interpolate('{{$randomCompanyName}}'));\n \n// create ManagingAccountId without Lodash\nfunction randomString(minValue, maxValue, dataSet = 'abcdefghijklmnopqrstuvwxyz0123456789') {\n  // if no minValue passed, default both to 50\n  if (typeof minValue !== 'number') {\n    minValue = 50;\n    maxValue = 50;\n  }\n  // if only minValue is a number, make maxValue = minValue\n  else if (typeof maxValue !== 'number') {\n    maxValue = minValue;\n  }\n \n  // pick a random integer between minValue and maxValue (inclusive)\n  const length = Math.floor(Math.random() * (maxValue - minValue + 1)) + minValue;\n \n  // build the random string\n  let result = '';\n  for (let i = 0; i < length; i++) {\n    result += dataSet.charAt(Math.floor(Math.random() * dataSet.length));\n  }\n  return result;\n}\n \n// set it in Bruno’s environment so you can use {{provisionAccountManagingAccountId}}\nbru.setEnvVar(\n  'provisionAccountManagingAccountId',\n  randomString()  // defaults to 50 chars if you don’t pass args\n);\n \n// create SubscriptionId without Lodash\nfunction randomString(minValue, maxValue, dataSet = 'abcdefghijklmnopqrstuvwxyz0123456789') {\n  // default to length 50 if nothing passed\n  if (typeof minValue !== 'number') {\n    minValue = 50;\n    maxValue = 50;\n  }\n  // if only min passed, make max = min\n  else if (typeof maxValue !== 'number') {\n    maxValue = minValue;\n  }\n \n  // pick a random integer between minValue and maxValue (inclusive)\n  const length = Math.floor(Math.random() * (maxValue - minValue + 1)) + minValue;\n \n  // build the string\n  let result = '';\n  for (let i = 0; i < length; i++) {\n    result += dataSet.charAt(Math.floor(Math.random() * dataSet.length));\n  }\n  return result;\n}\n \n// set it into Bruno’s environment\nbru.setEnvVar(\n  'provisionAccountSubscriptionId',\n  randomString()  // will default to 50 chars if you don’t pass args\n);"
+  - type: after-response
+    code: |-
+      test("OK", function () {
+          expect(res.getStatus()).to.equal(202);
+      });

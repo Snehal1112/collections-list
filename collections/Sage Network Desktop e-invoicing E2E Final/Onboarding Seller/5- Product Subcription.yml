@@ -1,0 +1,33 @@
+uid: 17c0db86-38c6-4404-a10c-81e19c52613d
+info:
+  name: 5- Product Subcription
+  type: http
+  seq: 5
+http:
+  method: POST
+  url: '{{OrgServiceURL}}/v1/accounts/{{accountId}}/product-subscriptions'
+  headers:
+  - name: X-Idempotency-Key
+    value: '{{provisionAccountIdempotency2}}'
+  - name: Authorization
+    value: Bearer {{jwtCloudId}}
+  body:
+    type: json
+    data: |-
+      {
+        "SubscriptionId": "{{SubscriptionId}}",
+        "Origin": "product",
+        "BackOfficeId": "13922345",
+        "BackOfficeSource": "InTouch"
+      }
+runtime:
+  scripts:
+  - type: before-request
+    code: "// --- helper ---\nfunction makeUUID() {\n  try {\n    const { randomUUID } = require(\"crypto\");\n    return randomUUID();\n  } catch {\n    function s4() {\n      return Math.floor((1 + Math.random()) * 0x10000).toString(16).substring(1);\n    }\n    return `${s4()}${s4()}-${s4()}-${s4()}-${s4()}-${s4()}${s4()}${s4()}`;\n  }\n}\n\n// --- previous value (raw) ---\nconst prev = bru.getVar(\"SubscriptionId\");\n\n// --- new value ---\nconst next = makeUUID();\n\n// Set new values (runtime + env)\nbru.setVar(\"SubscriptionId\", next);\nbru.setEnvVar(\"SubscriptionId\", next);\n\n// --- Use bru.interpolate for logging or composing strings ---\nconst logLine = bru.interpolate(\n  \"[SubscriptionId] prev={{SubscriptionId}} -> next={{SubscriptionId}}\"\n);\n// At this moment both prev/next equal (we just set it). If you want the *real* previous, use `prev` directly:\nconsole.log(`[SubscriptionId] prev=${prev || \"<none>\"} -> next=${next}`);\n\n\n\nbru.setVar(\"provisionAccountIdempotency2\", makeUUID()); // \nbru.setEnvVar(\"provisionAccountIdempotency2\", bru.getVar(\"idempotencyKey\"));"
+  - type: after-response
+    code: |-
+      const jsonData = res.getBody();
+
+      if (!jsonData.errors) {
+        bru.setVar("ProductSubscriptionId", jsonData.Id);
+      }

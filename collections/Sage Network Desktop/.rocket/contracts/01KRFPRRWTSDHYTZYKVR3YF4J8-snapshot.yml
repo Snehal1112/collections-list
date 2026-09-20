@@ -1,0 +1,13 @@
+contractId: 01KRFPRRWTSDHYTZYKVR3YF4J8
+entries:
+- requestPath: Sync using ZIP file/Get Datasets.yml
+  method: GET
+  urlPattern: https://api-qa.network-eng.sage.com/datasets
+  headers:
+  - key: Sdd
+    value: ddddddd
+  queryParams: []
+  formFields: []
+  authType: none
+  authDetail: ''
+  capturedAt: 2026-05-15T02:41:10.674912Z
