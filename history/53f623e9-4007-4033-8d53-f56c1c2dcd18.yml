@@ -1,9 +1,0 @@
-id: 53f623e9-4007-4033-8d53-f56c1c2dcd18
-method: GET
-url: https://api.rocketvault.numericlabs.io/api/v1/users/44f9a085-ca78-4736-8a4e-0dc5e4dddc23
-status: 200
-durationMs: 1840
-responseSize: 118
-timestamp: 2026-09-20T06:17:18.768637386Z
-collection: api-4
-requestName: Get User
